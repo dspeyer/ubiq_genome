@@ -1,0 +1,43 @@
+Q1:
+Runs via q1.py. Call as follows: python q1.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
+A python script (q1.py) was created that called poretools fastq and piped the data called into a text file. From there, the file was processed
+and the number of counts of "fast5" within the file was counted. This gives an accurate number of files within the pass/fail folders,
+because "fast5" only appears once per file read in. This was first done to get all counts in the fail folder, using the command:
+>poretools fastq --type all path/downloads/fail/
+--type all means that both 2D and 1D (template and complement) data are pulled. The counts are saved into a variable. The same is then performed
+for the passes folder. Next, the same commands are run again, but for only 2D reads, so "--type all" is replaced by "--type 2D". These values are
+also stored. Finally, the data is output, and calculations for fraction of 2D reads in the pass and fail folders are performed (2Dpass/allpass, etc)
+and data is output.
+
+All failures: 3364
+All passes: 3243
+2D failures: 540
+2D passes: 1081
+Fraction 2D in fails: 0.1605
+Fraction 2D in passes: 0.3333
+
+
+~~~~ISSUES: Should this be pulling --type all? By pulling this it pulls more files than actually included in the directories (ex: pass contains only
+1081 files if I look within the pass folder itself). Could this be an error on my part? Also the paper doesn't specify pulling template and complement,
+so that was an assumption by me.
+
+
+Q6:
+Runs via q6.py. Call as follows: python q6.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
+The script q6.py creates histograms for the data with the pass and fail folders using the following command:
+>poretools hist path/downloads/PASSORFAIL/
+The fail histogram in first created, followed by pass. The horizontal axis is read length, while vertical is counts of reads.
+
+
+~~~~ISSUES: Does this grab complements and templates? I cannot specify --type all, so I'm not sure, but I'd say no. I'm not sure how to get around this. Also, the question is kind of ambiguously worded. Should I just be making one histogram per folder, or two--one for 1D and one for 2D?
+
+
+Q7:
+Runs via q7.py. Call as follows: python q7.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
+q7.py runs the command:
+>poretools winner --type X path/downloads/pass
+For each type of read (template, complement, 2D) the previous command is run (replacing X with the shorthand used by poretools for the current read type). The output is then processed, pulling out the name of the file the read is coming from, as well as the number of nucleotides in the read. The results for number of nucleotides were as follows:
+
+Template: 11820
+Complement: 11498
+2D: 12916
