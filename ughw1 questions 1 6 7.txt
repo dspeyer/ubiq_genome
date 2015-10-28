@@ -21,10 +21,7 @@ Q6:
 Runs via q6.py. Call as follows: python q6.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
 The script q6.py creates histograms for the data with the pass and fail folders using the following command:
 >poretools hist path/downloads/PASSORFAIL/
-The fail histogram in first created, followed by pass. The horizontal axis is read length, while vertical is counts of reads.
-
-
-~~~~ISSUES: Does this grab complements and templates? I cannot specify --type all, so I'm not sure, but I'd say no. I'm not sure how to get around this. Also, the question is kind of ambiguously worded. Should I just be making one histogram per folder, or two--one for 1D and one for 2D?
+The fail histogram for 1D data in first created, followed by pass 1D, fail 2D, and pass 2D. After this, histograms are made for all data within the pass and fail folders. The horizontal axis is always read length, while vertical is counts of reads.
 
 
 Q7:
