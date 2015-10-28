@@ -30,7 +30,7 @@ def rr(readtype, path, failorpass, histname):
 	plot.hist(analyzer.values(), bins=20)
 	plot.xlabel('Read Length')
 	plot.ylabel('Number of Reads')
-	plot.savefig(''+histname+'.eps',format='eps')
+	plot.savefig(''+histname+'.png',format='png')
 
 
 path=sys.argv[1]
