@@ -17,11 +17,6 @@ Fraction 2D in fails: 0.1605
 Fraction 2D in passes: 0.3333
 
 
-~~~~ISSUES: Should this be pulling --type all? By pulling this it pulls more files than actually included in the directories (ex: pass contains only
-1081 files if I look within the pass folder itself). Could this be an error on my part? Also the paper doesn't specify pulling template and complement,
-so that was an assumption by me.
-
-
 Q6:
 Runs via q6.py. Call as follows: python q6.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
 The script q6.py creates histograms for the data with the pass and fail folders using the following command:
