@@ -30,6 +30,7 @@ def rr(readtype, path, failorpass, histname):
 	plot.hist(analyzer.values(), bins=20)
 	plot.xlabel('Read Length')
 	plot.ylabel('Number of Reads')
+        plot.title('%s %s' % (readtype, failorpass))
 	plot.savefig(''+histname+'.png',format='png')
 
 
