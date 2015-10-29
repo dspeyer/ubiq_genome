@@ -21,16 +21,19 @@ filename=""
 leng=0
 
 filename, leng = rr("fwd", path, "strand_template ")
+filename=os.path.basename(os.path.normpath(filename))
 print "\nLONGEST TEMPLATE READ"
 print "From file: "+filename.strip()
 print "Number of nucleotides: "+str(leng)
 
 filename, leng = rr("rev", path, "strand_complement ")
+filename=os.path.basename(os.path.normpath(filename))
 print "\nLONGEST COMPLEMENT READ"
 print "From file: "+filename.strip()
 print "Number of nucleotides: "+str(leng)
 
 filename, leng = rr("2D", path, "strand_twodirections ")
+filename=os.path.basename(os.path.normpath(filename))
 print "\nLONGEST 2D READ"
 print "From file: "+filename.strip()
 print "Number of nucleotides: "+str(leng)
