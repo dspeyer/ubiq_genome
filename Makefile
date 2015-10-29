@@ -9,6 +9,9 @@ ans2_auto.tex: q2.py
 cumnucfail.png: q3.py
 	./q3.py ${DIR}
 
+ans5_auto.tex: group4_report1_question5.py
+	./group4_report1_question5.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans5_auto.tex
+
 q6hf.png: q6.py
 	./q6.py ${DIR}
 
