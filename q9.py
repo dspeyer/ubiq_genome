@@ -11,6 +11,10 @@
 import sys
 import os
 import csv
+import warnings
+
+
+warnings.simplefilter("ignore")
 
 path=sys.argv[1]
 
