@@ -8,10 +8,17 @@
 #  $ poretools times fail/has2d/ >/Users/annebozack/Documents/genomics/timesFail.txt
 ###########################################################################
 
-# For passed
+import sys
+import os
 import csv
 
-with open('/Users/annebozack/Documents/genomics/timesPass.txt') as times_readP: 
+path=sys.argv[1]
+
+os.system('poretools times '+path+'downloads/pass/ >'+path+'downloads/pass/timesPass.txt')
+os.system('poretools times '+path+'downloads/fail/has2d/ >'+path+'downloads/fail/has2d/timesPass.txt')
+
+# For passed
+with open(''+path+'downloads/pass/timesPass.txt') as times_readP: 
 	reader = csv.reader(times_readP, delimiter='\t') 
 	timesPass = list(reader)
 
@@ -30,7 +37,7 @@ for i in range(1, len(timesPass)):
 	durationPass.append(durationIntPass)
 
 # For failed
-with open('/Users/annebozack/Documents/genomics/timesFail.txt') as times_readF: 
+with open(''+path+'downloads/fail/has2d/timesPass.txt') as times_readF: 
 	reader = csv.reader(times_readF, delimiter='\t') 
 	timesFail = list(reader)
 
@@ -52,12 +59,12 @@ for i in range(1, len(timesFail)):
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
-ax.axis([-100, 1000, -500, 15000])
+ax.axis([-100, 800, -500, 15000])
 ax.scatter(durationPass, lengthsPass, c='red', alpha=0.2, label='Pass')
 ax.scatter(durationFail, lengthsFail, c='blue', alpha=0.05, label='Fail')
 plt.legend(loc='upper right', numpoints=1)
 fig.suptitle('Sequence length by duration in pore, sec')
-plt.xlabel('Duration in pore')
+plt.xlabel('Duration in pore, sec')
 plt.ylabel('Length of sequence')
 plt.show()
 
