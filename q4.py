@@ -2,11 +2,13 @@
 import sys
 import os
 import matplotlib.pyplot as plot
+import warnings
+
+warnings.simplefilter("ignore")
 
 
 path=sys.argv[1]
 
-print "Plotting cumulative nucleotides sequenced as a function of time for 'passed' reads"
 os.system("poretools yield_plot --plot-type basepairs --saveas cumnucpassgenques.png --savedf passdf.txt '"+path+"downloads/pass/' &>/dev/null")
 
 times=[]
@@ -42,4 +44,6 @@ plot.savefig('q4hh.eps',format='eps')
 rate=cumu[qh]/times[qh]
 total=3e9/rate
 
-print "Over the first half hour, the rate was %.1f base pairs per second.  Therefore, to handle the 3 billion base pairs of the human genome would take %.1f hours." % (rate/3600, total)
+os.remove('cumnucpassgenques.png')
+
+print "\nOver the first half hour, the rate was %.1f base pairs per second.  Therefore, to handle the 3 billion base pairs of the human genome would take %.1f hours." % (rate/3600, total)

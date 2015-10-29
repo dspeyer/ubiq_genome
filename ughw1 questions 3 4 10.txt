@@ -2,15 +2,12 @@ Q3:
 Runs via q3.py. Call as follows: python q3.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
 The script q3.py plots the cumulative nucleotides/basepairs sequenced as a function of time for both 'failed' and 'passed' reads by running the command:
 >poretools yield_plot --plot-type basepairs --saveas '"+path+"cumnucfail.png' '"+path+"downloads/PASSORFAIL/
-The resulting .png files are saved to the working directory as cumnucpass.png or cumnucfail.png
+The resulting .png files are saved to the working directory as cumnucpass.png and cumnucfail.png
 
-~~~~ISSUES: Not sure if this is grabbing all reads or just 2D reads / not sure how to specify that only 2D reads should be processed
 
 Q4:
 Runs via q4.py. Call as follows: python q4.py PATHTODIR/WHEREHACKATHON/DOWNLOADSFILELOCATED/
-The script q4.py plots the passed reads as in q3 and saves it to file. It also saves the data frame to the working directory as a .txt file, passdf.txt.
-
-~~~~ISSUES: Wasn't sure what sort of model we wanted to use to extrapolate from the data, so I've just left it at generating the dataframe .txt file and we can decide when we meet how we want to fit a model and extrapolate.
+The script q4.py saves the data frame to the working directory as a .txt file, passdf.txt.
 
 
 Q10:
@@ -20,10 +17,10 @@ The script q10.py defines the nucleotide composition of both 'passed' and 'faile
 The output is processed, so that the percentage of each nucleotide is printed. The results were as follows:
 
 Failed reads %Composition
-% A: 25.5900235632
-% C: 22.8668746713
-% T: 27.4090369488
-% G: 24.1340648166
+% A: 26.8544936058
+% C: 22.6248607838
+% T: 26.8972371186
+% G: 23.6234084919
 
 Passed reads %Composition
 % A: 27.8932849874
@@ -31,4 +28,3 @@ Passed reads %Composition
 % T: 27.990263778
 % G: 22.3723667238
 
-~~~~ISSUES: Not sure if this is grabbing all reads or just 2D reads / not sure how to specify that only 2D reads should be processed
