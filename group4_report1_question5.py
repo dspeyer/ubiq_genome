@@ -1,4 +1,5 @@
 ################################################################################################
+# group4_report1_question5.py
 # Extract Quality Scores from FastQ files,
 # calculate mean, std dev, t-test comparisons
 #
@@ -6,11 +7,11 @@
 # Robert Piccone - rap2186
 # 2015-10-28
 #
-# FastQ files created with following poretools command lines run within pass/fail subdirectories:
+# FastQ files used by code created with following poretools command lines run within pass/fail subdirectories:
 # poretools fastq --type 2D *.fast5 > pass2D_fastq.txt
 # poretools fastq --type 2D *.fast5 > fail2D_fastq.txt
-#
 # poretools times *.fast5 > passtimes.tsv
+# (above FastQ files all uploaded to github repo)
 ################################################################################################
 
 from scipy import stats as sp
@@ -67,3 +68,33 @@ print
 print "Passed 2D Reads - Last Hour"
 print "Mean Quality Score:%g  Std. Dev.:%g n:%s" %(np.mean(lasthour_scores),np.std(lasthour_scores),np.size(lasthour_scores))
 print "Median:%g" % (np.median(lasthour_scores))
+
+##################################################
+#
+# OUTPUT OF ABOVE CODE, with commentary/discusson:
+#
+# Passed 2D Reads
+# Mean Quality Score:10.3775  Std. Dev.:1.83151 n:2764522
+#
+# Failed 2D Reads
+# Mean Quality Score:9.48623  Std. Dev.:2.06174 n:1417759
+#
+# T-test comparison:
+# T-Statistic:451.124
+# P-Value:0
+# 
+# The P-value was confirmed to be returned as 0 from Python/numpy. 
+# We believe in actuality that the true value was beneath the lowest threshold of Python's float value (2.2250738585072014e-308).
+# 
+# Passed 2D Reads - First Hour
+# Mean Quality Score:10.3668  Std. Dev.:1.82208 n:1970130
+# Median:10
+# 
+# Passed 2D Reads - Last Hour
+# Mean Quality Score:11.5651  Std. Dev.:2.12032 n:968
+# Median:11
+# 
+# The quality of the reads does not appear to have degraded over the timespan of the sequencing 
+# (on the contrary, there is a slight increase).
+# 
+#####################################################
