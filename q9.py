@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ###########################################################################
 # Number 9
 # Plot the pace of the strand sequencing for 2D reads classified as failed vs passed.
