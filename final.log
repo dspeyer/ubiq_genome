@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.13)  29 OCT 2015 18:27
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.13)  29 OCT 2015 19:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -328,31 +328,13 @@ Overfull \hbox (54.8111pt too wide) in paragraph at lines 124--125
  []
 
 [4 <./1Dpasses.png> <./1Dfailures.png> <./2Dpasses.png> <./2Dfailures.png>]
-Overfull \hbox (295.28519pt too wide) in paragraph at lines 130--133
-\OT1/cmr/m/n/10.95 From file: /home/cheyenne/Documents/hackathon1/alldata/downl
-oads/pass/MINION02[]4teamawesome[]2446[]1[]ch312[]file44[]strand.fast5 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 130--133
 
  []
 
 
-Overfull \hbox (295.28519pt too wide) in paragraph at lines 134--137
-\OT1/cmr/m/n/10.95 From file: /home/cheyenne/Documents/hackathon1/alldata/downl
-oads/pass/MINION02[]4teamawesome[]2446[]1[]ch312[]file44[]strand.fast5 
- []
-
-
 Underfull \hbox (badness 10000) in paragraph at lines 134--137
 
- []
-
-
-Overfull \hbox (295.28519pt too wide) in paragraph at lines 138--141
-\OT1/cmr/m/n/10.95 From file: /home/cheyenne/Documents/hackathon1/alldata/downl
-oads/pass/MINION02[]4teamawesome[]2446[]1[]ch312[]file44[]strand.fast5 
  []
 
 
@@ -372,237 +354,346 @@ File: q9.png Graphic file (type png)
 Package pdftex.def Info: q9.png used on input line 144.
 (pdftex.def)             Requested size: 360.0pt x 269.99951pt.
  [6 <./q8.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 146--158
+Underfull \hbox (badness 10000) in paragraph at lines 146--159
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--159
 
  []
 
 [7 <./q9.png>]
 Package epstopdf Info: Source file: <part11scatterbd.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:04:41
 (epstopdf)                    size: 60168 bytes
 (epstopdf)             Output file: <part11scatterbd-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 326777 bytes
+(epstopdf)                    date: 2015-10-29 18:54:16
+(epstopdf)                    size: 326805 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatterbd-eps-conver
 ted-to.pdf part11scatterbd.eps>
-(epstopdf)             \includegraphics on input line 165.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 167.
+runsystem(repstopdf --outfile=part11scatterbd-eps-converted-to.pdf part11scatte
+rbd.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <part11scatterbd-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:44
+(epstopdf)                    size: 326805 bytes.
 
 <part11scatterbd-eps-converted-to.pdf, id=147, 578.16pt x 433.62pt>
 File: part11scatterbd-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatterbd-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatterbd-eps-converted-to.pdf used on input lin
-e 165.
-(pdftex.def)             Requested size: 216.81pt x 162.6071pt.
+e 167.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--169
+
+ []
+
+[8 <./part11scatterbd-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11scatter0mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:04:41
 (epstopdf)                    size: 280024 bytes
 (epstopdf)             Output file: <part11scatter0mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 326874 bytes
+(epstopdf)                    date: 2015-10-29 18:54:17
+(epstopdf)                    size: 327113 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter0mer-eps-conv
 erted-to.pdf part11scatter0mer.eps>
-(epstopdf)             \includegraphics on input line 172.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 179.
+runsystem(repstopdf --outfile=part11scatter0mer-eps-converted-to.pdf part11scat
+ter0mer.eps)...executed safely (allowed).
 
-<part11scatter0mer-eps-converted-to.pdf, id=148, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter0mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:44
+(epstopdf)                    size: 327113 bytes.
+
+<part11scatter0mer-eps-converted-to.pdf, id=182, 578.16pt x 433.62pt>
 File: part11scatter0mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter0mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter0mer-eps-converted-to.pdf used on input l
-ine 172.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
- [8 <./part11scatterbd-eps-converted-to.pdf>]
+ine 179.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 179--180
+[][] 
+ []
+
+[9 <./part11scatter0mer-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11scatter1mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:05:08
 (epstopdf)                    size: 280018 bytes
 (epstopdf)             Output file: <part11scatter1mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 327316 bytes
+(epstopdf)                    date: 2015-10-29 18:54:17
+(epstopdf)                    size: 327625 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter1mer-eps-conv
 erted-to.pdf part11scatter1mer.eps>
-(epstopdf)             \includegraphics on input line 187.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 195.
+runsystem(repstopdf --outfile=part11scatter1mer-eps-converted-to.pdf part11scat
+ter1mer.eps)...executed safely (allowed).
 
-<part11scatter1mer-eps-converted-to.pdf, id=183, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter1mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:45
+(epstopdf)                    size: 327625 bytes.
+
+<part11scatter1mer-eps-converted-to.pdf, id=214, 578.16pt x 433.62pt>
 File: part11scatter1mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter1mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter1mer-eps-converted-to.pdf used on input l
-ine 187.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
- [9 <./part11scatter0mer-eps-converted-to.pdf> <./part11scatter1mer-eps-convert
-ed-to.pdf>]
+ine 195.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 195--196
+[][] 
+ []
+
+[10 <./part11scatter1mer-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11hist2.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:05:36
 (epstopdf)                    size: 22790 bytes
 (epstopdf)             Output file: <part11hist2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 15596 bytes
+(epstopdf)                    date: 2015-10-29 18:54:18
+(epstopdf)                    size: 15593 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist2-eps-converted-
 to.pdf part11hist2.eps>
-(epstopdf)             \includegraphics on input line 196.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 204.
+runsystem(repstopdf --outfile=part11hist2-eps-converted-to.pdf part11hist2.eps)
+...executed safely (allowed).
 
-<part11hist2-eps-converted-to.pdf, id=241, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11hist2-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:45
+(epstopdf)                    size: 15593 bytes.
+
+<part11hist2-eps-converted-to.pdf, id=244, 578.16pt x 433.62pt>
 File: part11hist2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11hist2-eps-converted-to.pdf>
-Package pdftex.def Info: part11hist2-eps-converted-to.pdf used on input line 19
-6.
+Package pdftex.def Info: part11hist2-eps-converted-to.pdf used on input line 20
+4.
 (pdftex.def)             Requested size: 216.81pt x 162.6071pt.
+
+Overfull \hbox (72.27pt too wide) in paragraph at lines 204--206
+[][]
+ []
+
 Package epstopdf Info: Source file: <part11scatter2mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:05:36
 (epstopdf)                    size: 280049 bytes
 (epstopdf)             Output file: <part11scatter2mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 328134 bytes
+(epstopdf)                    date: 2015-10-29 18:56:08
+(epstopdf)                    size: 328267 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter2mer-eps-conv
 erted-to.pdf part11scatter2mer.eps>
-(epstopdf)             \includegraphics on input line 197.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 214.
+runsystem(repstopdf --outfile=part11scatter2mer-eps-converted-to.pdf part11scat
+ter2mer.eps)...executed safely (allowed).
 
-<part11scatter2mer-eps-converted-to.pdf, id=242, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter2mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:46
+(epstopdf)                    size: 328267 bytes.
+<part11scatter2mer-eps-converted-to.pdf, id=245, 578.16pt x 433.62pt>
 File: part11scatter2mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter2mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter2mer-eps-converted-to.pdf used on input l
-ine 197.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
+ine 214.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 214--215
+[][] 
+ []
+
+[11 <./part11hist2-eps-converted-to.pdf> <./part11scatter2mer-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <part11hist3.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:06:04
 (epstopdf)                    size: 23306 bytes
 (epstopdf)             Output file: <part11hist3-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 15133 bytes
+(epstopdf)                    date: 2015-10-29 18:56:08
+(epstopdf)                    size: 15130 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist3-eps-converted-
 to.pdf part11hist3.eps>
-(epstopdf)             \includegraphics on input line 206.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 223.
+runsystem(repstopdf --outfile=part11hist3-eps-converted-to.pdf part11hist3.eps)
+...executed safely (allowed).
 
-<part11hist3-eps-converted-to.pdf, id=243, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11hist3-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:46
+(epstopdf)                    size: 15130 bytes.
+ <part11hist3-eps-converted-to.pdf, id=306, 578.16pt x 433.62pt>
 File: part11hist3-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11hist3-eps-converted-to.pdf>
-Package pdftex.def Info: part11hist3-eps-converted-to.pdf used on input line 20
-6.
+Package pdftex.def Info: part11hist3-eps-converted-to.pdf used on input line 22
+3.
 (pdftex.def)             Requested size: 216.81pt x 162.6071pt.
+
+Overfull \hbox (72.27pt too wide) in paragraph at lines 223--225
+[][]
+ []
+
 Package epstopdf Info: Source file: <part11scatter3mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:06:04
 (epstopdf)                    size: 280027 bytes
 (epstopdf)             Output file: <part11scatter3mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 327980 bytes
+(epstopdf)                    date: 2015-10-29 18:56:09
+(epstopdf)                    size: 328326 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter3mer-eps-conv
 erted-to.pdf part11scatter3mer.eps>
-(epstopdf)             \includegraphics on input line 207.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 233.
+runsystem(repstopdf --outfile=part11scatter3mer-eps-converted-to.pdf part11scat
+ter3mer.eps)...executed safely (allowed).
 
-<part11scatter3mer-eps-converted-to.pdf, id=244, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter3mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:47
+(epstopdf)                    size: 328326 bytes.
+<part11scatter3mer-eps-converted-to.pdf, id=307, 578.16pt x 433.62pt>
 File: part11scatter3mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter3mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter3mer-eps-converted-to.pdf used on input l
-ine 207.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
- [10 <./part11hist2-eps-converted-to.pdf> <./part11scatter2mer-eps-converted-to
-.pdf>]
+ine 233.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 233--234
+[][] 
+ []
+
+[12 <./part11hist3-eps-converted-to.pdf> <./part11scatter3mer-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <part11hist4.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:06:35
 (epstopdf)                    size: 30063 bytes
 (epstopdf)             Output file: <part11hist4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 14635 bytes
+(epstopdf)                    date: 2015-10-29 18:56:09
+(epstopdf)                    size: 14631 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist4-eps-converted-
 to.pdf part11hist4.eps>
-(epstopdf)             \includegraphics on input line 216.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 242.
+runsystem(repstopdf --outfile=part11hist4-eps-converted-to.pdf part11hist4.eps)
+...executed safely (allowed).
 
-<part11hist4-eps-converted-to.pdf, id=305, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11hist4-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:47
+(epstopdf)                    size: 14631 bytes.
+ <part11hist4-eps-converted-to.pdf, id=368, 578.16pt x 433.62pt>
 File: part11hist4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11hist4-eps-converted-to.pdf>
-Package pdftex.def Info: part11hist4-eps-converted-to.pdf used on input line 21
-6.
+Package pdftex.def Info: part11hist4-eps-converted-to.pdf used on input line 24
+2.
 (pdftex.def)             Requested size: 216.81pt x 162.6071pt.
+
+Overfull \hbox (72.27pt too wide) in paragraph at lines 242--244
+[][]
+ []
+
 Package epstopdf Info: Source file: <part11scatter4mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:06:35
 (epstopdf)                    size: 280025 bytes
 (epstopdf)             Output file: <part11scatter4mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 328262 bytes
+(epstopdf)                    date: 2015-10-29 18:56:10
+(epstopdf)                    size: 328499 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter4mer-eps-conv
 erted-to.pdf part11scatter4mer.eps>
-(epstopdf)             \includegraphics on input line 217.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 252.
+runsystem(repstopdf --outfile=part11scatter4mer-eps-converted-to.pdf part11scat
+ter4mer.eps)...executed safely (allowed).
 
-<part11scatter4mer-eps-converted-to.pdf, id=306, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter4mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:48
+(epstopdf)                    size: 328499 bytes.
+<part11scatter4mer-eps-converted-to.pdf, id=369, 578.16pt x 433.62pt>
 File: part11scatter4mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter4mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter4mer-eps-converted-to.pdf used on input l
-ine 217.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
- [11 <./part11hist3-eps-converted-to.pdf> <./part11scatter3mer-eps-converted-to
-.pdf>]
+ine 252.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 252--253
+[][] 
+ []
+
+[13 <./part11hist4-eps-converted-to.pdf> <./part11scatter4mer-eps-converted-to.
+pdf>]
 Package epstopdf Info: Source file: <part11hist5.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:07:42
 (epstopdf)                    size: 61836 bytes
 (epstopdf)             Output file: <part11hist5-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 16021 bytes
+(epstopdf)                    date: 2015-10-29 18:56:10
+(epstopdf)                    size: 16015 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist5-eps-converted-
 to.pdf part11hist5.eps>
-(epstopdf)             \includegraphics on input line 226.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 261.
+runsystem(repstopdf --outfile=part11hist5-eps-converted-to.pdf part11hist5.eps)
+...executed safely (allowed).
 
-<part11hist5-eps-converted-to.pdf, id=367, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11hist5-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:49
+(epstopdf)                    size: 16015 bytes.
+ <part11hist5-eps-converted-to.pdf, id=428, 578.16pt x 433.62pt>
 File: part11hist5-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11hist5-eps-converted-to.pdf>
-Package pdftex.def Info: part11hist5-eps-converted-to.pdf used on input line 22
-6.
+Package pdftex.def Info: part11hist5-eps-converted-to.pdf used on input line 26
+1.
 (pdftex.def)             Requested size: 216.81pt x 162.6071pt.
+
+Overfull \hbox (72.27pt too wide) in paragraph at lines 261--263
+[][]
+ []
+
 Package epstopdf Info: Source file: <part11scatter5mer.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 19:07:41
 (epstopdf)                    size: 280038 bytes
 (epstopdf)             Output file: <part11scatter5mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 327603 bytes
+(epstopdf)                    date: 2015-10-29 18:56:11
+(epstopdf)                    size: 327556 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter5mer-eps-conv
 erted-to.pdf part11scatter5mer.eps>
-(epstopdf)             \includegraphics on input line 227.
-Package epstopdf Info: Output file is already uptodate.
+(epstopdf)             \includegraphics on input line 271.
+runsystem(repstopdf --outfile=part11scatter5mer-eps-converted-to.pdf part11scat
+ter5mer.eps)...executed safely (allowed).
 
-<part11scatter5mer-eps-converted-to.pdf, id=368, 578.16pt x 433.62pt>
+Package epstopdf Info: Result file: <part11scatter5mer-eps-converted-to.pdf>
+(epstopdf)                    date: 2015-10-29 19:07:49
+(epstopdf)                    size: 327556 bytes.
+<part11scatter5mer-eps-converted-to.pdf, id=429, 578.16pt x 433.62pt>
 File: part11scatter5mer-eps-converted-to.pdf Graphic file (type pdf)
 
 <use part11scatter5mer-eps-converted-to.pdf>
 Package pdftex.def Info: part11scatter5mer-eps-converted-to.pdf used on input l
-ine 227.
-(pdftex.def)             Requested size: 289.07999pt x 216.80946pt.
- [12 <./part11hist4-eps-converted-to.pdf> <./part11scatter4mer-eps-converted-to
-.pdf>] [13 <./part11hist5-eps-converted-to.pdf> <./part11scatter5mer-eps-conver
-ted-to.pdf>] (./final.aux) ) 
+ine 271.
+(pdftex.def)             Requested size: 360.0pt x 269.99951pt.
+
+Overfull \hbox (17.0pt too wide) in paragraph at lines 271--272
+[][] 
+ []
+
+[14 <./part11hist5-eps-converted-to.pdf> <./part11scatter5mer-eps-converted-to.
+pdf>] (./final.aux) ) 
 Here is how much of TeX's memory you used:
- 2780 strings out of 495028
- 45046 string characters out of 6181497
+ 2781 strings out of 495028
+ 45058 string characters out of 6181497
  97075 words of memory out of 5000000
- 5952 multiletter control sequences out of 15000+600000
+ 5953 multiletter control sequences out of 15000+600000
  8503 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  42i,10n,40p,265b,424s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pf
-b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on final.pdf (13 pages, 2974230 bytes).
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
+Output written on final.pdf (14 pages, 2976474 bytes).
 PDF statistics:
- 505 PDF objects out of 1000 (max. 8388607)
- 106 compressed objects within 2 object streams
+ 508 PDF objects out of 1000 (max. 8388607)
+ 108 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  121 words of extra memory for PDF output out of 10000 (max. 10000000)
 

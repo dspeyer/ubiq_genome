@@ -70,16 +70,23 @@ for k in range(6):
         possibly with some constant term for getting started.  To consider this, we start with a scatterplot of
         bases against time with a linear fit.
 
-        \\includegraphics[width=3in]{part11scatterbd}
+        \\begin{centering}
+        \\includegraphics[width=\\textwidth]{part11scatterbd}
+        \\end{centering}
 
         We might be tempted to include a constant term in our fitting, but as should be apparent, it would be
         negative.  How long it would take to sequence an extremely short read is unclear.  Fortunately, there 
         are none in our sample.
-        '''
-        print 'Cost per nucleotide: %.2fms\\\\' % (costs[0][0]*1e3)
+
+        \\newpage
+        This allows us to construct a trivial (and still pretty effective) model based on a fixed cost per nucleotide.
+
+        Cost per nucleotide: %.2fms
+        ''' % (costs[0][0]*1e3)
     if k==1:
+        print '\\newpage'
         print '\\subsection*{Nucleotide Model}'
-        print 'Cost per nucleotide: '
+        print 'A slightly more complex model uses a differend cost for each type of nucleotide: '
         for i in range(4):
             print '%s=%.2dms ' % (vn[i], costs[i][0]*1e3)
         print '\n'
@@ -89,15 +96,27 @@ for k in range(6):
         plot.xlabel('Cost (seconds)')
         plot.ylabel('# of %d-mers'%k)
         plot.savefig('part11hist%d.eps'%k,format='eps')
-        print '\\subsection*{%dmer Model}' % k
         print '''
+        \\newpage
+        \\subsection*{%dmer Model}
+        \\begin{wrapfigure}{R}{2in}
+        \\vspace{-50pt}
+        \\includegraphics[width=3in]{part11hist%d}
+        \\vspace{-70pt}
+        \\end{wrapfigure}
         We can use a model in which each the time to extend by one nucleotide is determined by the %d-mer in the middle of the
         pore.  We can not list all the costs, but here's a histogram:
-        ''' % k
-        print '\\includegraphics[width=3in]{part11hist%d}\\\\' % k
+
+        \\vspace{1.5in}
+
+        And here's the resulting predictions:
+        ''' % (k,k,k)
+
 
         
-    print '\\includegraphics[width=4in]{part11scatter%dmer}\n\n$r^2=%.2f$\n' % (k,r2**2)
+    print '\\includegraphics[width=\\textwidth]{part11scatter%dmer}\n\n$r^2=%.2f$\n' % (k,r2**2)
 
     if k==0:
         print '\n(Red circles are template strand; blue are complement.  There appears to be no significant difference between them.)\n'
+
+print '\n\nAt this point our model has 1024 degrees of freedom for %d datapoints, so a good fit may reveal more overfitting than model appropriateness.' % (2*len(fns))
