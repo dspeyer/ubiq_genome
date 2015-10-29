@@ -1,28 +1,28 @@
 DIR=~/hackathon1-rw/alldata/
 
-ans1.tex: q1.py
-	./q1.py ${DIR} > ans1.tex
+ans1_auto.tex: q1.py
+	./q1.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans1_auto.tex
 
-ans2.tex: q2.py
-	./q2.py ${DIR}/downloads/ > ans2.tex
+ans2_auto.tex: q2.py
+	./q2.py ${DIR}/downloads/ > ans2_auto.tex
 
-ans6.tex: q6.py
-	./q6.py ${DIR} > ans6.tex
+cumnucfail.png: q3.py
+	./q3.py ${DIR}
 
-ans7.tex: q7.py
-	./q7.py ${DIR} > ans7.tex
+q6hf.png: q6.py
+	./q6.py ${DIR}
 
-ans10.tex: q10.py
-	./q10.py ${DIR} > ans10.tex
+ans7_auto.tex: q7.py
+	./q7.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans7_auto.tex
 
-ans11.tex: q11.py
-	./q11.py ${DIR}/downloads/ > ans11.tex
+ans10_auto.tex: q10.py
+	./q10.py ${DIR} | sed 's/$$/\\\\/g' | sed 's/%/\\%/g' > ans10_auto.tex
 
-final.tex: assemble.sh header.tex ans1.tex ans2.tex ans6.tex ans7.tex ans10.tex ans11.tex
+ans11_auto.tex: q11.py
+	./q11.py ${DIR}/downloads/ > ans11_auto.tex
+
+final.tex: assemble.sh header.tex ans1_auto.tex ans2_auto.tex ans3_manual.tex ans6_manual.tex ans7_auto.tex ans10_auto.tex ans11_auto.tex
 	./assemble.sh
 
-final.dvi: final.tex
-	latex final.tex
-
-final.pdf: final.dvi
-	dvipdf final.dvi
+final.pdf: final.tex cumnucfail.png q6hf.png
+	pdflatex final.tex

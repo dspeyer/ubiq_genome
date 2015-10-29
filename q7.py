@@ -39,12 +39,12 @@ os.remove('tempwinner.txt')
 
 print "\nLONGEST TEMPLATE READ"
 print "From file: "+tempfilename.strip()
-print "# of nucleotides: "+str(templen)
+print "Number of nucleotides: "+str(templen)
 
 print "\nLONGEST COMPLEMENT READ"
 print "From file: "+compfilename.strip()
-print "# of nucleotides: "+str(complen)
+print "Number of nucleotides: "+str(complen)
 
 print "\nLONGEST 2D READ"
 print "From file: "+twodfilename.strip()
-print "# of nucleotides: "+str(twodlen)
+print "Number of nucleotides: "+str(twodlen)
