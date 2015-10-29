@@ -4,6 +4,9 @@ import sys
 from glob import glob
 from collections import defaultdict
 import matplotlib.pyplot as plot
+import warnings
+
+warnings.simplefilter("ignore")
 
 dir=sys.argv[1]
 

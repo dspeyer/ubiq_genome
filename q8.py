@@ -5,6 +5,11 @@
 import sys
 import os
 import csv
+import warnings
+
+
+warnings.simplefilter("ignore")
+
 
 path=sys.argv[1]
 
@@ -54,5 +59,5 @@ plt.ylabel('Length of sequence')
 fig = plt.gcf()
 fig.subplots_adjust(bottom=0.25)
 fig.text(.03,.03,txt)
-plt.show()
+plt.savefig('q8.png')
 

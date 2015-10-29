@@ -11,6 +11,10 @@
 import sys
 import os
 import csv
+import warnings
+
+
+warnings.simplefilter("ignore")
 
 path=sys.argv[1]
 
@@ -59,13 +63,13 @@ for i in range(1, len(timesFail)):
 import matplotlib.pyplot as plt
 
 fig, ax = plt.subplots()
-ax.axis([-100, 800, -500, 15000])
+ax.axis([-50, 800, -500, 15000])
 ax.scatter(durationPass, lengthsPass, c='red', alpha=0.2, label='Pass')
 ax.scatter(durationFail, lengthsFail, c='blue', alpha=0.05, label='Fail')
 plt.legend(loc='upper right', numpoints=1)
 fig.suptitle('Sequence length by duration in pore, sec')
 plt.xlabel('Duration in pore, sec')
 plt.ylabel('Length of sequence')
-plt.show()
+plt.savefig('q9.png')
 
 
