@@ -46,6 +46,6 @@ print '2D pass histogram generated'
 
 #Creating histograms for both 1D and 2D in the pass and fail folder
 print "Creating 1D and 2D failure histogram"
-os.system("poretools hist --saveas histallfail.png "+path+"downloads/fail/")
+os.system("poretools hist --saveas histallfail.png "+path+"downloads/fail/ &>/dev/null")
 print "Creating 1D and 2D pass histogram"
-os.system("poretools hist --saveas histallpass.png "+path+"downloads/pass/")
+os.system("poretools hist --saveas histallpass.png "+path+"downloads/pass/ &>/dev/null")
