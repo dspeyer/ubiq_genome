@@ -21,7 +21,9 @@ Fraction of 2D reads in failed folder: 0.160523186683\\
 Fraction of 2D reads in passed folder: 0.333333333333\\
 \section*{Problem 2}
 \begin{wrapfigure}{r}{2.5in}
+  \vspace{-20pt}
   \includegraphics[width=2.5in]{part2hist}
+  \vspace{-20pt}
 \end{wrapfigure}
 218 channels had at least one read. 
 The average channel had 14.8 reads. 
@@ -29,27 +31,53 @@ Channel 212 had 95 reads, which was the most.
 
 Just for fun, here's a histogram of reads per channel\\
 \section*{Problem 3}
-\begin{figure}[h!]
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{cumnucpass}
-    \caption{Passed Reads}
-  \end{subfigure}
-  \begin{subfigure}[b]{0.45\textwidth}
-    \includegraphics[width=\textwidth]{cumnucfail}
-    \caption{Failed Reads}
-  \end{subfigure}
-\end{figure}
+\begin{tabular}{cc}
+\includegraphics[width=.48\textwidth]{cumnucpass}
+&
+\includegraphics[width=.48\textwidth]{cumnucfail}
+\\
+Passed Reads
+&
+Failed Reads
+\end{tabular}
 \section*{Problem 4}
-Let us zoom in a little on the previous graphes:
 
-\includegraphics[width=0.45\textwidth]{q4qh}
-\includegraphics[width=0.45\textwidth]{q4hh}
+
+Let us zoom in a little on the previous graphes: 
+
+
+\includegraphics[width=0.48\textwidth]{q4qh}
+\includegraphics[width=0.48\textwidth]{q4hh}
 
 The first quarter hour appears linear, but the first half hour does not.
 
 
 Over the first half hour, the rate was 1121.4 base pairs per second.  Therefore, to handle the 3 billion base pairs of the human genome would take 743.1 hours.
 \section*{Problem 5}
+\subsection*{Passed 2D Reads}
+Mean Quality Score=10.3775\\  Std. Dev.=1.83151\\ n=2764522\\
+
+\subsection*{Failed 2D Reads}
+Mean Quality Score=9.48623\\  Std. Dev.=2.06174\\ n=1417759\\
+
+\subsection*{T-test comparison}
+T-Statistic=451.124\\
+P-Value=0
+
+
+The P-value was confirmed to be returned as 0 from Python/numpy.
+We believe that the true value is above 0 but beneath the lowest threshold of Python's float value (2.2250738585072014e-308).
+
+\subsection*{Passed 2D Reads - First Hour}
+Mean Quality Score=10.3668\\  Std. Dev.=1.82208\\ n=1970130\\
+Median=10
+
+\subsection*{Passed 2D Reads - Last Hour}
+Mean Quality Score=11.5651\\  Std. Dev.=2.12032\\ n=968\\
+Median=11
+
+The quality of the reads does not appear to have degraded over the timespan of the sequencing
+(on the contrary, there is a slight increase).
 \section*{Problem 6}
 \subsection*{1D reads}
 
