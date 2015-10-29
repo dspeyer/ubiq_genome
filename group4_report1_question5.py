@@ -52,15 +52,15 @@ strCall='poretools fastq --type 2D ./downloads/pass/*.fast5 > pass2D_fastq.txt'
 os.system(strCall)
 pass2D_scores=get_quality_scores(path,'pass2D_fastq.txt')
 
-print "Passed 2D Reads"
-print "Mean Quality Score:%g  Std. Dev.:%g n:%s" %(np.mean(pass2D_scores),np.std(pass2D_scores),np.size(pass2D_scores))
+print "\\subsection*{Passed 2D Reads}"
+print "Mean Quality Score=%g\\\\  Std. Dev.=%g\\\\ n=%s\\\\" %(np.mean(pass2D_scores),np.std(pass2D_scores),np.size(pass2D_scores))
 print
-print "Failed 2D Reads"
-print "Mean Quality Score:%g  Std. Dev.:%g n:%s" %(np.mean(fail2D_scores),np.std(fail2D_scores),np.size(fail2D_scores))
+print "\\subsection*{Failed 2D Reads}"
+print "Mean Quality Score=%g\\\\  Std. Dev.=%g\\\\ n=%s\\\\" %(np.mean(fail2D_scores),np.std(fail2D_scores),np.size(fail2D_scores))
 print
-print "T-test comparison:" 
-print "T-Statistic:%g" % sp.stats.ttest_ind(pass2D_scores,fail2D_scores)[0]
-print "P-Value:%g" % sp.stats.ttest_ind(pass2D_scores,fail2D_scores)[1]
+print "\\subsection*{T-test comparison}" 
+print "T-Statistic=%g\\\\" % sp.stats.ttest_ind(pass2D_scores,fail2D_scores)[0]
+print "P-Value=%g\n" % sp.stats.ttest_ind(pass2D_scores,fail2D_scores)[1]
 print
 #printing commentary/discussion of results in next 2 lines
 print "The P-value was confirmed to be returned as 0 from Python/numpy."
@@ -77,13 +77,13 @@ fast5names=np.loadtxt(path + 'passtimes.tsv', delimiter="\t",usecols=(1,),dtype=
 firsthour_scores=get_quality_scores(path,'pass2D_fastq.txt',fast5names[firsthour_ind])
 lasthour_scores=get_quality_scores(path,'pass2D_fastq.txt',fast5names[lasthour_ind])
 
-print "Passed 2D Reads - First Hour"
-print "Mean Quality Score:%g  Std. Dev.:%g n:%s" %(np.mean(firsthour_scores),np.std(firsthour_scores),np.size(firsthour_scores))
-print "Median:%g" % (np.median(firsthour_scores))
+print "\\subsection*{Passed 2D Reads - First Hour}"
+print "Mean Quality Score=%g\\\\  Std. Dev.=%g\\\\ n=%s\\\\" %(np.mean(firsthour_scores),np.std(firsthour_scores),np.size(firsthour_scores))
+print "Median=%g" % (np.median(firsthour_scores))
 print
-print "Passed 2D Reads - Last Hour"
-print "Mean Quality Score:%g  Std. Dev.:%g n:%s" %(np.mean(lasthour_scores),np.std(lasthour_scores),np.size(lasthour_scores))
-print "Median:%g" % (np.median(lasthour_scores))
+print "\\subsection*{Passed 2D Reads - Last Hour}"
+print "Mean Quality Score=%g\\\\  Std. Dev.=%g\\\\ n=%s\\\\" %(np.mean(lasthour_scores),np.std(lasthour_scores),np.size(lasthour_scores))
+print "Median=%g" % (np.median(lasthour_scores))
 print
 #printing commentary/discussion of results in next 2 lines
 print "The quality of the reads does not appear to have degraded over the timespan of the sequencing"
