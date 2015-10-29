@@ -38,4 +38,3 @@ plot.ylabel('Channels with that many Reads')
 plot.savefig('part2hist.eps',format='eps')
 
 print "\nJust for fun, here's a histogram of reads per channel\\\\"
-print "\\includegraphics[width=3in]{part2hist}\n"
