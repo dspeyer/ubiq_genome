@@ -18,7 +18,7 @@ for line in data:
 os.remove('tempcomposition.txt')
 
 # Nucleotide composition of failed reads
-print "Computing nucleotide composition of failed reads..."
+print "\nComputing nucleotide composition of failed reads..."
 os.system("poretools nucdist '"+path+"downloads/pass/' >tempcomposition.txt")
 data = open('tempcomposition.txt').readlines()
 print "Passed reads %Composition"
