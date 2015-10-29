@@ -1,0 +1,203 @@
+\documentclass[11pt]{article}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{wrapfig}
+\title{Ubiquitous Genomics: Hackathon 1}
+
+\author{
+  Maya Anand\\ mva2112@columbia.edu \and
+  Anne Bozack\\ akb2134@cumc.columbia.edu \and
+  Cheyenne Parsley\\ cep2141@columbia.edu \and
+  Robert Piccone\\ rap2186@columbia.edu \and
+  Daniel Speyer\\ dls2192@columbia.edu}
+\begin{document}
+\maketitle
+\section*{Problem 1}
+Number of 1D and 2D reads classified as failed: 3364\\
+Number of 1D and 2D reads classified as passed: 3243\\
+Number of 2D reads classified as failed: 540\\
+Number of 2D reads classified as passed: 1081\\
+Fraction of 2D reads in failed folder: 0.160523186683\\
+Fraction of 2D reads in passed folder: 0.333333333333\\
+\section*{Problem 2}
+\begin{wrapfigure}{r}{2.5in}
+  \includegraphics[width=2.5in]{part2hist}
+\end{wrapfigure}
+218 channels had at least one read. 
+The average channel had 14.8 reads. 
+Channel 212 had 95 reads, which was the most.
+
+Just for fun, here's a histogram of reads per channel\\
+\section*{Problem 3}
+\begin{figure}[h!]
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{cumnucpass}
+    \caption{Passed Reads}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.45\textwidth}
+    \includegraphics[width=\textwidth]{cumnucfail}
+    \caption{Failed Reads}
+  \end{subfigure}
+\end{figure}
+\section*{Problem 4}
+Let us zoom in a little on the previous graphes:
+
+\includegraphics[width=0.45\textwidth]{q4qh}
+\includegraphics[width=0.45\textwidth]{q4hh}
+
+The first quarter hour appears linear, but the first half hour does not.
+
+
+Over the first half hour, the rate was 1121.4 base pairs per second.  Therefore, to handle the 3 billion base pairs of the human genome would take 743.1 hours.
+\section*{Problem 5}
+\section*{Problem 6}
+\subsection*{1D reads}
+
+        The following histograms show the length distribution of 1D reads (both template and complement) for passes and fails.
+
+        \begin{figure}[h!]
+		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{1Dpasses}
+    			\caption{Passed Reads}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{1Dfailures}
+    			\caption{Failed Reads}
+  		\end{subfigure}
+	\end{figure}
+        
+
+\subsection*{2D reads}
+
+        The following histograms show the length distribution of 2D reads for passes and fails.
+
+        \begin{figure}[h!]
+		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{2Dpasses}
+    			\caption{Passed Reads}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{2Dfailures}
+    			\caption{Failed Reads}
+  		\end{subfigure}
+	\end{figure}
+
+        
+\subsection*{1D and 2D reads}
+
+        The following histogramss show the cumulative length distribution of both 1D and 2D reads for passes and fails.
+
+        \begin{figure}[h!]
+		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{histallpass}
+    			\caption{Passed Reads}
+  		\end{subfigure}
+  		\begin{subfigure}[b]{0.45\textwidth}
+    			\includegraphics[width=3in]{histallfail}
+    			\caption{Failed Reads}
+  		\end{subfigure}
+	\end{figure}
+\section*{Problem 7}
+
+LONGEST TEMPLATE READ\\
+From file: /home/cheyenne/Documents/hackathon1/alldata/downloads/pass/MINION02\_4teamawesome\_2446\_1\_ch312\_file44\_strand.fast5\\
+Number of nucleotides: 11820\\
+
+LONGEST COMPLEMENT READ\\
+From file: /home/cheyenne/Documents/hackathon1/alldata/downloads/pass/MINION02\_4teamawesome\_2446\_1\_ch312\_file44\_strand.fast5\\
+Number of nucleotides: 11498\\
+
+LONGEST 2D READ\\
+From file: /home/cheyenne/Documents/hackathon1/alldata/downloads/pass/MINION02\_4teamawesome\_2446\_1\_ch312\_file44\_strand.fast5\\
+Number of nucleotides: 12916\\
+\section*{Problem 8}
+\includegraphics[width=\textwidth]{q8}
+\section*{Problem 9}
+\includegraphics[width=\textwidth]{q9}
+\section*{Problem 10}
+Computing nucleotide composition of passed reads...\\
+Failed reads \%Composition\\
+\% A: 26.8544936058\\
+\% C: 22.6248607838\\
+\% T: 26.8972371186\\
+\% G: 23.6234084919\\
+Computing nucleotide composition of failed reads...\\
+Passed reads \%Composition\\
+\% A: 27.8932849874\\
+\% C: 21.7440845108\\
+\% T: 27.990263778\\
+\% G: 22.3723667238\\
+\section*{Problem 11}
+\subsection*{Simple Model}
+
+        The simplest possible model is the one in which the number of nucleotides determines the read duration,
+        possibly with some constant term for getting started.  To consider this, we start with a scatterplot of
+        bases against time with a linear fit.
+
+        \includegraphics[width=3in]{part11scatterbd}
+
+        We might be tempted to include a constant term in our fitting, but as should be apparent, it would be
+        negative.  How long it would take to sequence an extremely short read is unclear.  Fortunately, there 
+        are none in our sample.
+        
+Cost per nucleotide: 11.25ms\\
+\includegraphics[width=4in]{part11scatter0mer}
+
+$r^2=0.84$
+
+
+(Red circles are template strand; blue are complement.  There appears to be no significant difference between them.)
+
+\subsection*{Nucleotide Model}
+Cost per nucleotide: 
+A=32ms 
+C=-07ms 
+G=04ms 
+T=12ms 
+
+
+\includegraphics[width=4in]{part11scatter1mer}
+
+$r^2=0.84$
+
+\subsection*{2mer Model}
+
+        We can use a model in which each the time to extend by one nucleotide is determined by the 2-mer in the middle of the
+        pore.  We can not list all the costs, but here's a histogram:
+        
+\includegraphics[width=3in]{part11hist2}\\
+\includegraphics[width=4in]{part11scatter2mer}
+
+$r^2=0.88$
+
+\subsection*{3mer Model}
+
+        We can use a model in which each the time to extend by one nucleotide is determined by the 3-mer in the middle of the
+        pore.  We can not list all the costs, but here's a histogram:
+        
+\includegraphics[width=3in]{part11hist3}\\
+\includegraphics[width=4in]{part11scatter3mer}
+
+$r^2=0.91$
+
+\subsection*{4mer Model}
+
+        We can use a model in which each the time to extend by one nucleotide is determined by the 4-mer in the middle of the
+        pore.  We can not list all the costs, but here's a histogram:
+        
+\includegraphics[width=3in]{part11hist4}\\
+\includegraphics[width=4in]{part11scatter4mer}
+
+$r^2=0.94$
+
+\subsection*{5mer Model}
+
+        We can use a model in which each the time to extend by one nucleotide is determined by the 5-mer in the middle of the
+        pore.  We can not list all the costs, but here's a histogram:
+        
+\includegraphics[width=3in]{part11hist5}\\
+\includegraphics[width=4in]{part11scatter5mer}
+
+$r^2=0.98$
+
+\end{document}
