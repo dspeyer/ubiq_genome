@@ -1,15 +1,16 @@
 ###########################################################################
 # Number 8
-# Plot the obtained sequence length over time for 2D reads.
-#
-# cvs file of time data created with the following poretools command lines:
-# 
-#  $ poretools times pass/has2d/ >/Users/annebozack/Documents/genomics/timesPass.txt
 ###########################################################################
 
+import sys
+import os
 import csv
 
-with open('/Users/annebozack/Documents/genomics/timesPass.txt') as times_readP: 
+path=sys.argv[1]
+
+os.system('poretools times '+path+'downloads/pass/ >'+path+'downloads/pass/timesPass.txt')
+
+with open(''+path+'downloads/pass/timesPass.txt') as times_readP: 
 	reader = csv.reader(times_readP, delimiter='\t') 
 	timesPass = list(reader)
 
@@ -39,8 +40,9 @@ for i in range(0, len(timeStart)):
 import matplotlib.pyplot as plt
 
 txt = '''
-	This graph was generated from the 2D pass reads, and time was calculated as time (in minutes)
-	that each read was initiated from the time the first read was initiated.  Those reads that
+	This graph was generated from the 2D pass reads, and time was 
+	calculated as time (in minutes) that each read was initiated 
+	from the time the first read was initiated.  Those reads that
 	initiated late did not achieve a long read length.'''
 
 fig, ax = plt.subplots()
@@ -50,7 +52,7 @@ fig.suptitle('Sequence length by time entered pore')
 plt.xlabel('Time after first read initiated, min')
 plt.ylabel('Length of sequence')
 fig = plt.gcf()
-fig.subplots_adjust(bottom=0.21)
+fig.subplots_adjust(bottom=0.25)
 fig.text(.03,.03,txt)
 plt.show()
 
