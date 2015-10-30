@@ -1,7 +1,7 @@
 DIR=~/hackathon1-rw/alldata/
 
 ${DIR}/downloads/fail/has2d: splitfails.py
-	./splitfails.py ${DIR}downloads/fail/
+	./splitfails.py ${DIR}/downloads/fail/
 
 ans1_auto.tex: group4_report1_question1.py
 	./group4_report1_question1.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans1_auto.tex
