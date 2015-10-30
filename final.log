@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.13)  29 OCT 2015 20:33
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.1.13)  30 OCT 2015 00:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -176,11 +176,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 16--22
  []
 
 Package epstopdf Info: Source file: <part2hist.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 21:13:44
 (epstopdf)                    size: 26706 bytes
 (epstopdf)             Output file: <part2hist-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 16366 bytes
+(epstopdf)                    date: 2015-10-30 00:27:45
+(epstopdf)                    size: 16362 bytes
 (epstopdf)             Command: <repstopdf --outfile=part2hist-eps-converted-to
 .pdf part2hist.eps>
 (epstopdf)             \includegraphics on input line 25.
@@ -192,25 +192,25 @@ File: part2hist-eps-converted-to.pdf Graphic file (type pdf)
 Package pdftex.def Info: part2hist-eps-converted-to.pdf used on input line 25.
 (pdftex.def)             Requested size: 180.67499pt x 135.5059pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 34--35
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 34.
+(Font)              <10.95> on input line 36.
 <cumnucpass.png, id=2, 614.295pt x 614.295pt>
 File: cumnucpass.png Graphic file (type png)
  <use cumnucpass.png>
-Package pdftex.def Info: cumnucpass.png used on input line 35.
+Package pdftex.def Info: cumnucpass.png used on input line 37.
 (pdftex.def)             Requested size: 172.79846pt x 172.79816pt.
 
 <cumnucfail.png, id=3, 614.295pt x 614.295pt>
 File: cumnucfail.png Graphic file (type png)
  <use cumnucfail.png>
-Package pdftex.def Info: cumnucfail.png used on input line 37.
+Package pdftex.def Info: cumnucfail.png used on input line 39.
 (pdftex.def)             Requested size: 172.79846pt x 172.79816pt.
 
-Overfull \hbox (9.59692pt too wide) in paragraph at lines 34--43
+Overfull \hbox (9.59692pt too wide) in paragraph at lines 36--45
 [] 
  []
 
@@ -219,50 +219,50 @@ Overfull \hbox (9.59692pt too wide) in paragraph at lines 34--43
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./part2hist-eps-converted-
 to.pdf>]
 Package epstopdf Info: Source file: <q4qh.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 21:13:44
 (epstopdf)                    size: 29382 bytes
 (epstopdf)             Output file: <q4qh-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 71201 bytes
+(epstopdf)                    date: 2015-10-30 00:27:46
+(epstopdf)                    size: 71211 bytes
 (epstopdf)             Command: <repstopdf --outfile=q4qh-eps-converted-to.pdf 
 q4qh.eps>
-(epstopdf)             \includegraphics on input line 49.
+(epstopdf)             \includegraphics on input line 51.
 Package epstopdf Info: Output file is already uptodate.
  <q4qh-eps-converted-to.pdf, id=44, 578.16pt x 433.62pt>
 File: q4qh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use q4qh-eps-converted-to.pdf>
-Package pdftex.def Info: q4qh-eps-converted-to.pdf used on input line 49.
+Package pdftex.def Info: q4qh-eps-converted-to.pdf used on input line 51.
 (pdftex.def)             Requested size: 172.79846pt x 129.59738pt.
 Package epstopdf Info: Source file: <q4hh.eps>
-(epstopdf)                    date: 2015-10-29 18:13:33
+(epstopdf)                    date: 2015-10-29 21:13:44
 (epstopdf)                    size: 34830 bytes
 (epstopdf)             Output file: <q4hh-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 18:13:33
-(epstopdf)                    size: 98434 bytes
+(epstopdf)                    date: 2015-10-30 00:27:46
+(epstopdf)                    size: 98453 bytes
 (epstopdf)             Command: <repstopdf --outfile=q4hh-eps-converted-to.pdf 
 q4hh.eps>
-(epstopdf)             \includegraphics on input line 50.
+(epstopdf)             \includegraphics on input line 52.
 Package epstopdf Info: Output file is already uptodate.
 
 <q4hh-eps-converted-to.pdf, id=45, 578.16pt x 433.62pt>
 File: q4hh-eps-converted-to.pdf Graphic file (type pdf)
 
 <use q4hh-eps-converted-to.pdf>
-Package pdftex.def Info: q4hh-eps-converted-to.pdf used on input line 50.
+Package pdftex.def Info: q4hh-eps-converted-to.pdf used on input line 52.
 (pdftex.def)             Requested size: 172.79846pt x 129.59738pt.
 
-Overfull \hbox (5.03026pt too wide) in paragraph at lines 49--51
+Overfull \hbox (5.03026pt too wide) in paragraph at lines 51--53
 [][] [] 
  []
 
-[2 <./cumnucpass.png> <./cumnucfail.png> <./q4qh-eps-converted-to.pdf> <./q4hh-
-eps-converted-to.pdf>]
+
 Underfull \hbox (badness 10000) in paragraph at lines 67--68
 
  []
 
-
+[2 <./cumnucpass.png> <./cumnucfail.png> <./q4qh-eps-converted-to.pdf> <./q4hh-
+eps-converted-to.pdf>]
 Underfull \hbox (badness 10000) in paragraph at lines 70--71
 
  []
@@ -353,10 +353,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 154--167
 
 [7 <./q9.png>]
 Package epstopdf Info: Source file: <part11scatterbd.eps>
-(epstopdf)                    date: 2015-10-29 19:04:41
+(epstopdf)                    date: 2015-10-30 00:24:21
 (epstopdf)                    size: 60168 bytes
 (epstopdf)             Output file: <part11scatterbd-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:44
+(epstopdf)                    date: 2015-10-30 00:27:48
 (epstopdf)                    size: 326805 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatterbd-eps-conver
 ted-to.pdf part11scatterbd.eps>
@@ -377,10 +377,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 175--177
 
 [8 <./part11scatterbd-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11scatter0mer.eps>
-(epstopdf)                    date: 2015-10-29 19:04:41
+(epstopdf)                    date: 2015-10-30 00:24:21
 (epstopdf)                    size: 280024 bytes
 (epstopdf)             Output file: <part11scatter0mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:44
+(epstopdf)                    date: 2015-10-30 00:27:48
 (epstopdf)                    size: 327113 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter0mer-eps-conv
 erted-to.pdf part11scatter0mer.eps>
@@ -401,10 +401,10 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 187--188
 
 [9 <./part11scatter0mer-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11scatter1mer.eps>
-(epstopdf)                    date: 2015-10-29 19:05:08
+(epstopdf)                    date: 2015-10-30 00:24:49
 (epstopdf)                    size: 280018 bytes
 (epstopdf)             Output file: <part11scatter1mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:45
+(epstopdf)                    date: 2015-10-30 00:27:49
 (epstopdf)                    size: 327625 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter1mer-eps-conv
 erted-to.pdf part11scatter1mer.eps>
@@ -425,10 +425,10 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 203--204
 
 [10 <./part11scatter1mer-eps-converted-to.pdf>]
 Package epstopdf Info: Source file: <part11hist2.eps>
-(epstopdf)                    date: 2015-10-29 19:05:36
+(epstopdf)                    date: 2015-10-30 00:25:18
 (epstopdf)                    size: 22790 bytes
 (epstopdf)             Output file: <part11hist2-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:45
+(epstopdf)                    date: 2015-10-30 00:27:50
 (epstopdf)                    size: 15593 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist2-eps-converted-
 to.pdf part11hist2.eps>
@@ -448,10 +448,10 @@ Overfull \hbox (72.27pt too wide) in paragraph at lines 212--214
  []
 
 Package epstopdf Info: Source file: <part11scatter2mer.eps>
-(epstopdf)                    date: 2015-10-29 19:05:36
+(epstopdf)                    date: 2015-10-30 00:25:18
 (epstopdf)                    size: 280049 bytes
 (epstopdf)             Output file: <part11scatter2mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:46
+(epstopdf)                    date: 2015-10-30 00:27:50
 (epstopdf)                    size: 328267 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter2mer-eps-conv
 erted-to.pdf part11scatter2mer.eps>
@@ -472,10 +472,10 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 222--223
 [11 <./part11hist2-eps-converted-to.pdf> <./part11scatter2mer-eps-converted-to.
 pdf>]
 Package epstopdf Info: Source file: <part11hist3.eps>
-(epstopdf)                    date: 2015-10-29 19:06:04
+(epstopdf)                    date: 2015-10-30 00:25:48
 (epstopdf)                    size: 23306 bytes
 (epstopdf)             Output file: <part11hist3-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:46
+(epstopdf)                    date: 2015-10-30 00:27:51
 (epstopdf)                    size: 15130 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist3-eps-converted-
 to.pdf part11hist3.eps>
@@ -494,10 +494,10 @@ Overfull \hbox (72.27pt too wide) in paragraph at lines 231--233
  []
 
 Package epstopdf Info: Source file: <part11scatter3mer.eps>
-(epstopdf)                    date: 2015-10-29 19:06:04
+(epstopdf)                    date: 2015-10-30 00:25:48
 (epstopdf)                    size: 280027 bytes
 (epstopdf)             Output file: <part11scatter3mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:47
+(epstopdf)                    date: 2015-10-30 00:27:51
 (epstopdf)                    size: 328326 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter3mer-eps-conv
 erted-to.pdf part11scatter3mer.eps>
@@ -518,10 +518,10 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 241--242
 [12 <./part11hist3-eps-converted-to.pdf> <./part11scatter3mer-eps-converted-to.
 pdf>]
 Package epstopdf Info: Source file: <part11hist4.eps>
-(epstopdf)                    date: 2015-10-29 19:06:35
+(epstopdf)                    date: 2015-10-30 00:26:19
 (epstopdf)                    size: 30063 bytes
 (epstopdf)             Output file: <part11hist4-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:47
+(epstopdf)                    date: 2015-10-30 00:27:52
 (epstopdf)                    size: 14631 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist4-eps-converted-
 to.pdf part11hist4.eps>
@@ -540,10 +540,10 @@ Overfull \hbox (72.27pt too wide) in paragraph at lines 250--252
  []
 
 Package epstopdf Info: Source file: <part11scatter4mer.eps>
-(epstopdf)                    date: 2015-10-29 19:06:35
+(epstopdf)                    date: 2015-10-30 00:26:19
 (epstopdf)                    size: 280025 bytes
 (epstopdf)             Output file: <part11scatter4mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:48
+(epstopdf)                    date: 2015-10-30 00:27:52
 (epstopdf)                    size: 328499 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter4mer-eps-conv
 erted-to.pdf part11scatter4mer.eps>
@@ -564,10 +564,10 @@ Overfull \hbox (17.0pt too wide) in paragraph at lines 260--261
 [13 <./part11hist4-eps-converted-to.pdf> <./part11scatter4mer-eps-converted-to.
 pdf>]
 Package epstopdf Info: Source file: <part11hist5.eps>
-(epstopdf)                    date: 2015-10-29 19:07:42
+(epstopdf)                    date: 2015-10-30 00:27:27
 (epstopdf)                    size: 61836 bytes
 (epstopdf)             Output file: <part11hist5-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:49
+(epstopdf)                    date: 2015-10-30 00:27:53
 (epstopdf)                    size: 16015 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11hist5-eps-converted-
 to.pdf part11hist5.eps>
@@ -586,10 +586,10 @@ Overfull \hbox (72.27pt too wide) in paragraph at lines 269--271
  []
 
 Package epstopdf Info: Source file: <part11scatter5mer.eps>
-(epstopdf)                    date: 2015-10-29 19:07:41
+(epstopdf)                    date: 2015-10-30 00:27:27
 (epstopdf)                    size: 280038 bytes
 (epstopdf)             Output file: <part11scatter5mer-eps-converted-to.pdf>
-(epstopdf)                    date: 2015-10-29 19:07:49
+(epstopdf)                    date: 2015-10-30 00:27:53
 (epstopdf)                    size: 327556 bytes
 (epstopdf)             Command: <repstopdf --outfile=part11scatter5mer-eps-conv
 erted-to.pdf part11scatter5mer.eps>
@@ -616,14 +616,14 @@ Here is how much of TeX's memory you used:
  5946 multiletter control sequences out of 15000+600000
  8503 words of font info for 30 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 42i,10n,40p,265b,219s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 42i,10n,40p,265b,217s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cm
 mi10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb>
-Output written on final.pdf (14 pages, 2977057 bytes).
+Output written on final.pdf (14 pages, 2970856 bytes).
 PDF statistics:
  508 PDF objects out of 1000 (max. 8388607)
  108 compressed objects within 2 object streams
