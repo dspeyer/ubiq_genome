@@ -3,38 +3,38 @@ DIR=~/hackathon1-rw/alldata/
 ${DIR}/downloads/fail/has2d: splitfails.py
 	./splitfails.py ${DIR}/downloads/fail/
 
-ans1_auto.tex: q1.py
-	./q1.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans1_auto.tex
+ans1_auto.tex: group4_report1_question1.py
+	./group4_report1_question1.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans1_auto.tex
 
-ans2_auto.tex: q2.py
-	./q2.py ${DIR}/downloads/ > ans2_auto.tex
+ans2_auto.tex: group4_report1_question2.py
+	./group4_report1_question2.py ${DIR}/downloads/ > ans2_auto.tex
 
-cumnucfail.png: q3.py ${DIR}/downloads/fail/has2d
-	./q3.py ${DIR}
+cumnucfail.png: group4_report1_question3.py ${DIR}/downloads/fail/has2d
+	./group4_report1_question3.py ${DIR}
 
-ans4_auto.tex: q4.py
-	./q4.py ${DIR} > ans4_auto.tex
+ans4_auto.tex: group4_report1_question4.py
+	./group4_report1_question4.py ${DIR} > ans4_auto.tex
 
 ans5_auto.tex: group4_report1_question5.py
 	./group4_report1_question5.py ${DIR} > ans5_auto.tex
 
-histallfail.png: q6.py
-	./q6.py ${DIR}
+histallfail.png: group4_report1_question6.py
+	./group4_report1_question6.py ${DIR}
 
-ans7_auto.tex: q7.py
-	./q7.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans7_auto.tex
+ans7_auto.tex: group4_report1_question7.py
+	./group4_report1_question7.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans7_auto.tex
 
-q8.png: q8.py
-	./q8.py ${DIR}
+q8.png: group4_report1_question8.py
+	./group4_report1_question8.py ${DIR}
 
-q9.png: q9.py ${DIR}/downloads/fail/has2d
-	./q9.py ${DIR}
+q9.png: group4_report1_question9.py ${DIR}/downloads/fail/has2d
+	./group4_report1_question9.py ${DIR}
 
-ans10_auto.tex: q10.py ${DIR}/downloads/fail/has2d
-	./q10.py ${DIR} | sed 's/$$/\\\\/g' | sed 's/%/\\%/g' > ans10_auto.tex
+ans10_auto.tex: group4_report1_question10.py ${DIR}/downloads/fail/has2d
+	./group4_report1_question10.py ${DIR} | sed 's/$$/\\\\/g' | sed 's/%/\\%/g' > ans10_auto.tex
 
-ans11_auto.tex: q11.py
-	./q11.py ${DIR}/downloads/ > ans11_auto.tex
+ans11_auto.tex: group4_report1_question11.py
+	./group4_report1_question11.py ${DIR}/downloads/ > ans11_auto.tex
 
 final.tex: assemble.sh header.tex ans1_auto.tex ans2_auto.tex ans2_manual.tex ans3_manual.tex ans4_auto.tex ans4_manual.tex ans5_auto.tex ans6_manual.tex ans7_auto.tex ans8_manual.tex ans9_manual.tex ans10_auto.tex ans11_auto.tex
 	./assemble.sh
