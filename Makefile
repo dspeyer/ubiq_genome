@@ -1,14 +1,16 @@
 DIR=~/hackathon1-rw/alldata/
 
+${DIR}/downloads/fail/has2d: splitfails.py
+	./splitfails.py ${DIR}/downloads/fail/
+
 ans1_auto.tex: q1.py
 	./q1.py ${DIR} | sed 's/.$$/&\\\\/g' |sed 's/_/\\_/g' > ans1_auto.tex
 
 ans2_auto.tex: q2.py
 	./q2.py ${DIR}/downloads/ > ans2_auto.tex
 
-cumnucfail.png: q3.py
+cumnucfail.png: q3.py ${DIR}/downloads/fail/has2d
 	./q3.py ${DIR}
-
 
 ans4_auto.tex: q4.py
 	./q4.py ${DIR} > ans4_auto.tex
@@ -25,10 +27,10 @@ ans7_auto.tex: q7.py
 q8.png: q8.py
 	./q8.py ${DIR}
 
-q9.png: q9.py
+q9.png: q9.py ${DIR}/downloads/fail/has2d
 	./q9.py ${DIR}
 
-ans10_auto.tex: q10.py
+ans10_auto.tex: q10.py ${DIR}/downloads/fail/has2d
 	./q10.py ${DIR} | sed 's/$$/\\\\/g' | sed 's/%/\\%/g' > ans10_auto.tex
 
 ans11_auto.tex: q11.py
