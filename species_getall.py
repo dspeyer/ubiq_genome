@@ -4,8 +4,10 @@ from operator import itemgetter
 
 path = sys.argv[1]
 
+
 def num_there(s):
     return any(i.isdigit() for i in s)
+
 
 try:
     os.mkdir(path+'/hasspec')
@@ -26,7 +28,7 @@ for directory, subdirectories, files in os.walk(path):
 
 
 gendict={}
-foundbac=False
+genera=[]
 for directory, subdirectories, files in os.walk(path+'/hasspec'):
     for file in files:
 	f = open(path+file)
@@ -36,14 +38,18 @@ for directory, subdirectories, files in os.walk(path+'/hasspec'):
 		if itr==1:
 			itr+=1
 		else:
-			if spec=="":
-				spec=line.split()
-				if not num_there(spec[1]):
-					spec=line
-				else:
-					spec=""
+			spec=line.split()
+			if not num_there(spec[1]):
+				spec=""
+				genera.append(line)
+			else:
+				spec=""
 			itr+=1
-	spec=spec.split()
+
+foundbac=False
+for species in genera:
+	species=species.strip()
+	spec=species.split()
 	genus=""
 	whole=""
 	if spec[0] == "PREDICTED:":
@@ -57,15 +63,12 @@ for directory, subdirectories, files in os.walk(path+'/hasspec'):
 		if genus.strip()==line.strip():
 			print "Bacteria found: "+whole
 			foundbac=True
-
 	if whole in gendict:
 		gendict[whole]+=1
 	else:
 		gendict[whole]=1
-
-	f.close()
 if not foundbac:
 		print "No bacteria found"
 print "\nSpecies    # Occurrences"
 for key, value in sorted(gendict.items(), key=itemgetter(1), reverse=True):
-	print(key, value)
+	print(key, value)	
