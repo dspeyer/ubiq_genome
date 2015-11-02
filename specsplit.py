@@ -21,7 +21,7 @@ for directory, subdirectories, files in os.walk(path):
 			pass
 
 
-
+gendict={}
 for directory, subdirectories, files in os.walk(path+'/hasspec'):
     for file in files:
 	f = open(path+file)
@@ -38,7 +38,7 @@ for directory, subdirectories, files in os.walk(path+'/hasspec'):
 	whole=""
 	if spec[0] == "PREDICTED:":
 		genus=spec[1]
-		whole=spec[1]+" "+spec[2]
+		whole=spec[1]
 	else:
 		genus=spec[0]
 		whole=spec[0]+" "+spec[1]
@@ -46,5 +46,13 @@ for directory, subdirectories, files in os.walk(path+'/hasspec'):
 	for line in b:
 		if genus.strip()==line.strip():
 			print "Bacteria found: "+whole
+	if whole in gendict:
+		gendict[whole]+=1
+	else:
+		gendict[whole]=1
+
 	f.close()
+print "\nSpecies    # Occurrences"
+for i in gendict:
+    print i, gendict[i]
 		
