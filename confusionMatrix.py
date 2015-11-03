@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ###########################################################################
 # Confusion matrix
 # path = tomatoaligns directory (/Users/annebozack/Documents/genomics/upload/ubiq_genome/tomatoaligns/)

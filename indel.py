@@ -8,6 +8,8 @@ delsize=defaultdict(lambda:0)
 insnuc=defaultdict(lambda:0)
 delnuc=defaultdict(lambda:0)
 
+tot=0
+
 for fn in sys.argv[1:]:
     f=file(fn)
     while f:
@@ -25,6 +27,7 @@ for fn in sys.argv[1:]:
         if len(query)!=len(sbjct):
             print 'Length mismatch %s %s (%d vs %d)' % (fn, name, len(query), len(sbjct))
             continue
+        tot += len(query)
         state='neither'
         indelsince=-1
         for i in xrange(len(query)):
@@ -32,30 +35,30 @@ for fn in sys.argv[1:]:
                 print 'Error matching - %s %s %d' % (fn, name, i)
             if state=='neither':
                 if query[i]=='-':
-                    state='ins'
-                    insnuc[sbjct[i]] += 1
+                    state='del'
+                    delnuc[sbjct[i]] += 1
                     indelsince=i
                 if sbjct[i]=='-':
-                    state='del'
-                    delnuc[query[i]] += 1
+                    state='ins'
+                    insnuc[query[i]] += 1
                     indelsince=i
             elif state=='ins':
-                if query[i]=='-':
-                    insnuc[sbjct[i]] += 1
-                else:
-                    state='neither'
-                    inssize[i-indelsince] += 1
-            elif state=='del':
                 if sbjct[i]=='-':
                     insnuc[query[i]] += 1
                 else:
                     state='neither'
+                    inssize[i-indelsince] += 1
+            elif state=='del':
+                if query[i]=='-':
+                    delnuc[sbjct[i]] += 1
+                else:
+                    state='neither'
                     delsize[i-indelsince] += 1
 
-print 'size\t#ins\t#dels'
-for i in set(inssize.keys()+delsize.keys()):
-    print '%d\t%d\t%d' % (i, inssize[i], delsize[i])
+print 'size\tins\tdels'
+for i in sorted(list(set(inssize.keys()+delsize.keys()))):
+    print '%d\t%.2g%%\t%.2g%%' % (i, 100*inssize[i]/float(tot), 100*delsize[i]/float(tot))
 
 print 'nuc\t#ins\t#dels'
-for i in set(insnuc.keys()+delnuc.keys()):
-    print '%s\t%d\t%d' % (i, insnuc[i], delnuc[i])
+for i in sorted(list(set(insnuc.keys()+delnuc.keys()))):
+    print '%s\t%.2g%%\t%.2g%%' % (i, 100*insnuc[i]/float(tot), 100*delnuc[i]/float(tot))
