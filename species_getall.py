@@ -42,7 +42,6 @@ for directory, subdirectories, files in os.walk(path+'/hasspec'):
 			if not num_there(spec[1]):
 				spec=""
 				genera.append(line)
-				break
 			else:
 				spec=""
 			itr+=1
