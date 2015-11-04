@@ -1,3 +1,4 @@
+#!/usr/bin/python
 ###########################################################################
 # Confusion matrix
 # path = tomatoaligns directory (/Users/annebozack/Documents/genomics/upload/ubiq_genome/tomatoaligns/)
@@ -15,8 +16,8 @@ read = ''
 for i in range(0, len(files)):
 	f = open(''+path+''+files[i]+'')
 	lines = f.readlines()
-	ref = ref + lines[2]
-	read = read + lines[4]
+	ref = ref + lines[4]
+	read = read + lines[2]
 
 ref = list(ref)
 read = list(read)
