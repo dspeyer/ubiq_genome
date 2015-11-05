@@ -1,0 +1,3 @@
+Parasites,6500000,Babesia,Wuchereria,Gongylonema,Onchocerca,Eimeria
+Meat,2619050000,Ovis,Bos,Homo,Bison,Capra,Giraffa,Sus,Mus,Canis,Pan,Pongo,Muntiacus,Odocoileus,Callithrix,Euphydryas,Pseudorca,Aepyceros,Pantholops
+Vegetables,682188000,Solanum,Capsicum,Bubalus,Petunia,Nicotiana,Hevea,Mitreola,Oreocarya,Beta,Cucumis,Physalis,Lemna,Impatiens,Pedicularis,Orobanche,Ellisia,Convolvulus,Nolana,Diapensia,Iochroma,Dunalia,Atropa,Vitis,Helianthus,Salvia,Boea,Malus

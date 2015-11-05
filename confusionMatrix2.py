@@ -1,7 +1,9 @@
 #!/usr/bin/python
 
+from __future__ import division
 import sys
 from collections import defaultdict
+from tabulate import tabulate
 
 inssize=defaultdict(lambda:0)
 delsize=defaultdict(lambda:0)
@@ -109,10 +111,9 @@ for fn in sys.argv[1:]:
 			noClass +=1
 
 
-total = trueA + AtoC + AtoT + AtoG + Ainsert + Adel + trueC + CtoA + CtoT + CtoG + Cinsert + Cdel + trueT + TtoA + TtoC + TtoG + Tinsert + Tdel + trueG + GtoA + GtoT + GtoC + Ginsert + Gdel
-print total
+# total = trueA + AtoC + AtoT + AtoG + Ainsert + Adel + trueC + CtoA + CtoT + CtoG + Cinsert + Cdel + trueT + TtoA + TtoC + TtoG + Tinsert + Tdel + trueG + GtoA + GtoT + GtoC + Ginsert + Gdel
+# print total
 
 # Making table
 
-from tabulate import tabulate
-print tabulate([['A', trueA, AtoC, AtoG, AtoT, Adel], ['C', CtoA, trueC, CtoG, CtoT, Cdel], ['G', GtoA, GtoC, trueG, GtoT, Gdel], ['T', TtoA, TtoC, TtoG, trueT, Tdel], ['Insertion', Ainsert, Cinsert, Ginsert, Tinsert, '-']], headers=['Reference', 'A', 'C', 'G', 'T', 'Deletion'])
+print tabulate([['A', trueA, AtoC, AtoG, AtoT, Adel], ['', (trueA/(trueA + AtoC + AtoG + AtoT + Adel)), (AtoC/(trueA + AtoC + AtoG + AtoT + Adel)), (AtoG/(trueA + AtoC + AtoG + AtoT + Adel)), (AtoT/(trueA + AtoC + AtoG + AtoT + Adel)), (Adel/(trueA + AtoC + AtoG + AtoT + Adel))], ['C', CtoA, trueC, CtoG, CtoT, Cdel], ['', (CtoA/(CtoA + trueC + CtoG + CtoT + Cdel)), (trueC/(CtoA + trueC + CtoG + CtoT + Cdel)), (CtoG/(CtoA + trueC + CtoG + CtoT + Cdel)), (CtoT/(CtoA + trueC + CtoG + CtoT + Cdel)), (Cdel/(CtoA + trueC + CtoG + CtoT + Cdel))], ['G', GtoA, GtoC, trueG, GtoT, Gdel], ['', (GtoA/(GtoA + GtoC + trueG + GtoT + Gdel)), (GtoC/(GtoA + GtoC + trueG + GtoT + Gdel)), (trueG/(GtoA + GtoC + trueG + GtoT + Gdel)), (GtoT/(GtoA + GtoC + trueG + GtoT + Gdel)), (Gdel/(GtoA + GtoC + trueG + GtoT + Gdel))], ['T', TtoA, TtoC, TtoG, trueT, Tdel], ['', (TtoA/(TtoA + TtoC + TtoG + trueT + Tdel)), (TtoC/(TtoA + TtoC + TtoG + trueT + Tdel)), (TtoG/(TtoA + TtoC + TtoG + trueT + Tdel)), (trueT/(TtoA + TtoC + TtoG + trueT + Tdel)), (Tdel/(TtoA + TtoC + TtoG + trueT + Tdel))], ['Insertion', Ainsert, Cinsert, Ginsert, Tinsert, '-'], ['', (Ainsert/(Ainsert + Cinsert + Ginsert + Tinsert)), (Cinsert/(Ainsert + Cinsert + Ginsert + Tinsert)), (Ginsert/(Ainsert + Cinsert + Ginsert + Tinsert)), (Tinsert/(Ainsert + Cinsert + Ginsert + Tinsert)), '-']], headers=['Reference', 'A', 'C', 'G', 'T', 'Deletion'])
