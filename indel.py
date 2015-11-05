@@ -57,8 +57,9 @@ for fn in sys.argv[1:]:
 
 print 'size\tins\tdels'
 for i in sorted(list(set(inssize.keys()+delsize.keys()))):
-    print '%d\t%.2g%%\t%.2g%%' % (i, 100*inssize[i]/float(tot), 100*delsize[i]/float(tot))
+#    print '%d\t%.2g%%\t%.2g%%' % (i, 100*inssize[i]/float(tot), 100*delsize[i]/float(tot))
+    print '%d\t%d\t%d' % (i, inssize[i], delsize[i])
 
 print 'nuc\t#ins\t#dels'
 for i in sorted(list(set(insnuc.keys()+delnuc.keys()))):
-    print '%s\t%.2g%%\t%.2g%%' % (i, 100*insnuc[i]/float(tot), 100*delnuc[i]/float(tot))
+    print '%s\t%d\t%d' % (i, insnuc[i], delnuc[i])
