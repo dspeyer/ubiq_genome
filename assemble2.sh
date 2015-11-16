@@ -1,0 +1,17 @@
+#!/bin/sh
+
+cat header.tex | sed 's/Hackathon 1/Hackathon2/' > final2.tex
+for i in 1 2 3 6 7; do
+    if [ $i -lt 4 ]; then
+	echo "\\section*{Problem $i}" >> final2.tex
+    else
+	echo "\\section*{Problem `expr $i - 2`}" >> final2.tex
+    fi
+    if [ -e "ans${i}_manual.tex" ]; then
+	cat ans${i}_manual.tex >> final2.tex
+    fi
+    if [ -e "ans${i}_auto.tex" ]; then
+	cat ans${i}_auto.tex >> final2.tex
+    fi
+done
+echo "\\end{document}" >> final2.tex
