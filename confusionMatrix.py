@@ -1,6 +1,6 @@
 #!/usr/bin/python
 ###########################################################################
-# Confusion matrix
+# Confusion matrix.  This code generates a confusion matrix using the first alignment result in the each tomatoaligns file.
 # path = tomatoaligns directory (/Users/annebozack/Documents/genomics/upload/ubiq_genome/tomatoaligns/)
 ###########################################################################
 

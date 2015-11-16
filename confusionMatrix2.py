@@ -1,4 +1,7 @@
 #!/usr/bin/python
+#####################################################################################################
+# Confusion matrix.  This generates a confusion matrix for alignments which covered at least 95% of the read of tomatoalign files.
+#####################################################################################################
 
 from __future__ import division
 import sys
