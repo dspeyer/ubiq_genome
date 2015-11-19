@@ -96,9 +96,13 @@ def rr(readtype, path, failorpass, histname):
 	hold=0
 	subval=0
 	for key in sorted(twodict):
-	    val=int(twodict[key])
-	    key=key.split()
-	    key=int(key[1].replace(":",""))
+            try:
+                    val=int(twodict[key])
+                    key=key.split()
+                    key=int(key[1].replace(":",""))
+            except IndexError:
+                    print 'Skipping key "%s"'%key
+                    continue
 	    if key-1900>=0 and prev19 is False:
 		subval=subval+40
 	        prev19 = True
