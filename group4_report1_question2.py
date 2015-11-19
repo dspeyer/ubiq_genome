@@ -15,7 +15,7 @@ cnt=defaultdict(lambda:0)
 for i in glob(dir+'/pass/*.fast5')+glob(dir+'/fail/*.fast5'):
     fn=i.split('/')[-1]
     pieces=fn.split('_')
-    ch=pieces[4][2:]
+    ch=pieces[-3][2:]
     cnt[ch]+=1
 
 
@@ -34,3 +34,11 @@ print "%d channels had at least one read, and %d had at least five.  " % (nch, s
 print "This compares with 434 ``active'' channels during initialization, and 651 immediately after loading fuel\n"
 print "The average channel had %.1f reads. " % (float(total)/nch)
 print "Channel %s had %d reads, which was the most." % (argmax, max)
+
+plot.clf()
+plot.hist(cnt.values(), bins=20)
+plot.xlabel('Reads per Channel')
+plot.ylabel('Channels with that many Reads')
+plot.savefig('part2hist.eps',format='eps')
+
+print "\nJust for fun, here's a histogram of reads per channel\\\\"
