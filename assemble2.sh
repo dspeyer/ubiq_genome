@@ -2,6 +2,9 @@
 
 cat header.tex | sed 's/Hackathon 1/Hackathon2/' | grep -v Anne > final2.tex
 for i in 1 2 3 6 7; do
+    if [ $i -eq 3 -o $i -eq 6 ]; then
+	echo '\\newpage' >> final2.tex
+    fi
     if [ $i -lt 4 ]; then
 	echo "\\section*{Problem $i}" >> final2.tex
     else
