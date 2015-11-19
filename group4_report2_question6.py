@@ -22,6 +22,8 @@ strFlag=""
 samfiles=os.listdir(sampath)
 
 for filename in samfiles:
+        if filename[-4:]!='.sam':
+                continue
 	file = open(sampath + filename, 'r')
 	linenum=0
 	for line in file:
@@ -32,16 +34,16 @@ flags=np.array(strFlag[:-1].split(";"))
 flags=flags.astype(int)
 read_counts=np.unique(flags, return_counts=True)
 
-print "Total # of aligned reads: %i" % sum(read_counts[1][np.where(read_counts[0]!=4)])
-print "Total # of unaligned reads: %i" % read_counts[1][np.where(read_counts[0]==4)]
-print
-print "Total # of reads: %i" % sum(read_counts[1])
+print "Total \\# of aligned reads: %i\\\\" % sum(read_counts[1][np.where(read_counts[0]!=4)])
+print "Total \\# of unaligned reads: %i\\\\" % read_counts[1][np.where(read_counts[0]==4)]
+print '\\\\'
+print "Total \\# of reads: %i\\\\" % sum(read_counts[1])
 
 '''
 Output generated:
-Total # of aligned reads: 851
-Total # of unaligned reads: 231
+Total \\# of aligned reads: 851
+Total \\# of unaligned reads: 231
 
-Total # of reads: 1082
+Total \\# of reads: 1082
 
 '''
