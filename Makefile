@@ -36,6 +36,9 @@ ans10_auto.tex: group4_report1_question10.py ${DIR}/downloads/fail/has2d
 ans11_auto.tex: group4_report1_question11.py
 	./group4_report1_question11.py ${DIR}/downloads/ > ans11_auto.tex
 
+ans2_6_auto.tex: group4_report2_question6.py
+	./group4_report2_question6.py > ans2_6_auto.tex
+	
 ans2_7_auto.tex: group4_report2_question7.py
 	./group4_report2_question7.py > ans2_7_auto.tex
 
