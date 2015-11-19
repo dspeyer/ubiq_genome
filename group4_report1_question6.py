@@ -35,17 +35,8 @@ def rr(readtype, path, failorpass, histname):
 
 
 path=sys.argv[1]
-rr("fwd,rev", path, "fail", "1Dfailures")
-print '1D failure histogram generated'
-rr("fwd,rev", path, "pass", "1Dpasses")
-print '1D pass histogram generated'
+
 rr("2D", path, "fail", "2Dfailures")
 print '2D failure histogram generated'
 rr("2D", path, "pass", "2Dpasses")
 print '2D pass histogram generated'
-
-#Creating histograms for both 1D and 2D in the pass and fail folder
-print "Creating 1D and 2D failure histogram"
-os.system("poretools hist --saveas histallfail.png "+path+"downloads/fail/ &>/dev/null")
-print "Creating 1D and 2D pass histogram"
-os.system("poretools hist --saveas histallpass.png "+path+"downloads/pass/ &>/dev/null")

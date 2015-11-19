@@ -1,4 +1,4 @@
-DIR=~/hackathon2/
+DIR=~/Hackathon2/
 
 ${DIR}/downloads/fail/has2d: splitfails.py
 	./splitfails.py ${DIR}/downloads/fail/
@@ -9,7 +9,7 @@ ans1_auto.tex: group4_report1_question1.py
 ans2_auto.tex: group4_report1_question2.py
 	./group4_report1_question2.py ${DIR}/downloads/ > ans2_auto.tex
 
-cumnucfail.png: group4_report1_question3.py ${DIR}/downloads/fail/has2d
+failcum2D.png: group4_report1_question3.py
 	./group4_report1_question3.py ${DIR}
 
 ans4_auto.tex: group4_report1_question4.py
@@ -18,7 +18,7 @@ ans4_auto.tex: group4_report1_question4.py
 ans5_auto.tex: group4_report1_question5.py
 	./group4_report1_question5.py ${DIR} > ans5_auto.tex
 
-histallfail.png: group4_report1_question6.py
+2Dfailures.png: group4_report1_question6.py
 	./group4_report1_question6.py ${DIR}
 
 ans7_auto.tex: group4_report1_question7.py
@@ -39,12 +39,12 @@ ans11_auto.tex: group4_report1_question11.py
 final.tex: assemble.sh header.tex ans1_auto.tex ans2_auto.tex ans2_manual.tex ans3_manual.tex ans4_auto.tex ans4_manual.tex ans5_auto.tex ans6_manual.tex ans7_auto.tex ans8_manual.tex ans9_manual.tex ans10_auto.tex ans11_auto.tex
 	./assemble.sh
 
-final2.tex: assemble2.sh header.tex ans1_auto.tex ans2_auto.tex ans2_manual.tex ans3_manual.tex ans6_manual.tex ans7_auto.tex
+final2.tex: assemble2.sh header.tex ans1_auto.tex ans2_auto.tex ans3_manual.tex ans6_manual.tex ans7_auto.tex
 	./assemble2.sh
 
 final.pdf: final.tex cumnucfail.png histallfail.png q8.png q9.png
 	pdflatex final.tex
 
 
-final2.pdf: final2.tex cumnucfail.png histallfail.png
+final2.pdf: final2.tex failcum2D.png 2Dfailures.png
 	pdflatex final2.tex
