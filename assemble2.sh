@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cat header.tex | sed 's/Hackathon 1/Hackathon2/' > final2.tex
+cat header.tex | sed 's/Hackathon 1/Hackathon2/' | grep -v Anne > final2.tex
 for i in 1 2 3 6 7; do
     if [ $i -lt 4 ]; then
 	echo "\\section*{Problem $i}" >> final2.tex
