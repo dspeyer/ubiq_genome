@@ -14,4 +14,14 @@ for i in 1 2 3 6 7; do
 	cat ans${i}_auto.tex >> final2.tex
     fi
 done
+for i in 6 7 8; do
+    echo "\\section*{Problem $i}" >> final2.tex
+    if [ -e "ans2_${i}_manual.tex" ]; then
+	cat ans2_${i}_manual.tex >> final2.tex
+    fi
+    if [ -e "ans2_${i}_auto.tex" ]; then
+	cat ans2_${i}_auto.tex >> final2.tex
+    fi
+done
+
 echo "\\end{document}" >> final2.tex

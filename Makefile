@@ -36,10 +36,13 @@ ans10_auto.tex: group4_report1_question10.py ${DIR}/downloads/fail/has2d
 ans11_auto.tex: group4_report1_question11.py
 	./group4_report1_question11.py ${DIR}/downloads/ > ans11_auto.tex
 
+ans2_7_auto.tex: group4_report2_question7.py
+	./group4_report2_question7.py > ans2_7_auto.tex
+
 final.tex: assemble.sh header.tex ans1_auto.tex ans2_auto.tex ans2_manual.tex ans3_manual.tex ans4_auto.tex ans4_manual.tex ans5_auto.tex ans6_manual.tex ans7_auto.tex ans8_manual.tex ans9_manual.tex ans10_auto.tex ans11_auto.tex
 	./assemble.sh
 
-final2.tex: assemble2.sh header.tex ans1_auto.tex ans2_auto.tex ans3_manual.tex ans6_manual.tex ans7_auto.tex
+final2.tex: assemble2.sh header.tex ans1_auto.tex ans2_auto.tex ans3_manual.tex ans6_manual.tex ans7_auto.tex ans2_7_auto.tex
 	./assemble2.sh
 
 final.pdf: final.tex cumnucfail.png histallfail.png q8.png q9.png
