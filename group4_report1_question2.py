@@ -31,7 +31,7 @@ for i in cnt:
         argmax=i
 
 print "%d channels had at least one read, and %d had at least five.  " % (nch, sum([x>=5 for x in cnt.values()]))
-print "This compares with 434 ``active'' channels during initialization, and 651 immediately after loading fuel\n"
+print "This compares with 412 ``active'' channels during initialization, and 618 immediately after loading fuel\n"
 print "The average channel had %.1f reads. " % (float(total)/nch)
 print "Channel %s had %d reads, which was the most." % (argmax, max)
 

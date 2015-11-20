@@ -21,17 +21,17 @@ Number of 2D reads classified as passed: 1082\\
   \vspace{-20pt}
 \end{wrapfigure}
 255 channels had at least one read, and 216 had at least five.  
-This compares with 434 ``active'' channels during initialization, and 651 immediately after loading fuel
+This compares with 412 ``active'' channels during initialization, and 618 immediately after loading fuel
 
 The average channel had 9.9 reads. 
 Channel 53 had 67 reads, which was the most.
 
 Just for fun, here's a histogram of reads per channel\\
-\newpage
+\\newpage
 \section*{Problem 3}
 \subsection*{Failed Reads}
 
-        The following histograms show the length distribution of 2D and 1D reads for fails.
+        The following plots show the length distribution of 2D and 1D reads for fails.
        
         \begin{tabular}{cc}
           \includegraphics[width=.48\textwidth]{failcum2D}
@@ -45,7 +45,7 @@ Just for fun, here's a histogram of reads per channel\\
 
 \subsection*{Passed Reads}
 
-        The following histograms show the length distribution of 2D and 1D reads for passes.
+        The following plots show the length distribution of 2D and 1D reads for passes.
 
         
         \begin{tabular}{cc}
@@ -57,7 +57,7 @@ Just for fun, here's a histogram of reads per channel\\
           &
           1D Reads
         \end{tabular}
-\newpage
+\\newpage
 \section*{Problem 4}
 \subsection*{2D reads}
 
@@ -107,13 +107,19 @@ T & 1741 & 3952 & 3316 & 171694 & 10925\\
 - & 10330 & 11696 & 12358 & 9871 & 0\\ 
 \end{tabular}
 \section*{Problem 8}
+To reduce the number of errors in the reads, we could have tried several methods:
 
-We could have PCRed the DNA with random primers to have more copies of
-fewer fragments, then gotten some redundancy and used that to
-cross-check.
+First, we could PCR the DNA with random primers to have more copies of
+fewer fragments. From this information, we then could get some redundancy and 
+use that to cross-check our data.
 
-We can look at the quality scores and only pay attention to high ones
-(though we saw last time that those aren't very good).
+Next, we could look at the quality scores and only pay attention to high ones.
+This could lead to throwing out poor data, and improving the overall accuracy
+of the reads. Though this sounds like a solid strategy in theory, it should be
+noted that in the last hackathon, we found that the quality scores were not
+very good.
 
-We can only believe polymorphisms that are known to be in $>$1\% of the population
+Finally, we could improve accuracy by only believing polymorphisms that are known 
+to be in $>$1\% of the population. Otherwise, we must believe it is a mutation, and
+not a variation. 
 \end{document}

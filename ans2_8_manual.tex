@@ -1,9 +1,15 @@
+To reduce the number of errors in the reads, we could have tried several methods:
 
-We could have PCRed the DNA with random primers to have more copies of
-fewer fragments, then gotten some redundancy and used that to
-cross-check.
+First, we could PCR the DNA with random primers to have more copies of
+fewer fragments. From this information, we then could get some redundancy and 
+use that to cross-check our data.
 
-We can look at the quality scores and only pay attention to high ones
-(though we saw last time that those aren't very good).
+Next, we could look at the quality scores and only pay attention to high ones.
+This could lead to throwing out poor data, and improving the overall accuracy
+of the reads. Though this sounds like a solid strategy in theory, it should be
+noted that in the last hackathon, we found that the quality scores were not
+very good.
 
-We can only believe polymorphisms that are known to be in $>$1\% of the population
+Finally, we could improve accuracy by only believing polymorphisms that are known 
+to be in $>$1\% of the population. Otherwise, we must believe it is a mutation, and
+not a variation. 
