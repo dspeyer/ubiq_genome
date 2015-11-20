@@ -74,9 +74,13 @@ def rr(readtype, path, failorpass, histname):
 	prev19=False
         prev20=False
         for key in sorted(onedict):
-	    val=int(onedict[key])
-	    key=key.split()
-	    key=int(key[1].replace(":",""))
+            try:
+                    val=int(onedict[key])
+                    key=key.split()
+                    key=int(key[1].replace(":",""))
+            except IndexError:
+                    print 'Skipping key "%s"'%key
+                    continue
 	    if key-1900>=0 and prev19 is False:
 		subval=subval+40
 	        prev19 = True
@@ -134,7 +138,7 @@ def rr(readtype, path, failorpass, histname):
 path=sys.argv[1]
 
 rr("2D", path, "fail", "failcum")
-print '1D and 2D failure histograms generated'
+print '1D and 2D failure plots generated'
 rr("2D", path, "pass", "passcum")
-print '1D and 2D pass histogram generated'
+print '1D and 2D pass plots generated'
 
