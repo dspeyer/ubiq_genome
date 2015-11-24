@@ -11,6 +11,7 @@ for line in sam:
     words=line.split('\t')
     cigar=words[5]
     seq=words[9]
+    qual=words[10]
     break
 
 cigarpieces = re.split('([0-9]*[A-Z])', cigar)
@@ -18,8 +19,11 @@ i=0
 
 ins={'A':0, 'C':0, 'G':0, 'T':0}
 
-seqf=file(fn.replace('.sam','.query.fa'), 'w')
+seqf=file(fn.replace('.sam','.query.fq'), 'w')
 insf=file(fn.replace('.sam','.insertions'), 'w')
+
+seqf.write('>\n')
+outqual=''
 
 for piece in cigarpieces:
     if not piece:
@@ -34,11 +38,15 @@ for piece in cigarpieces:
         i += n
     elif op=='M':
         seqf.write(seq[i:(i+n)])
+        outqual += qual[i:(i+n)]
         i+=n
     elif op=='D':
         seqf.write('-'*n)
+        outqual += (' '*n)
     else:
         print '<<unknown op: %s>>' % op
+
+seqf.write('\n\n'+outqual)
 
 for c in 'ACTG':
     insf.write('%s %d\t'%(c,ins[c]))
