@@ -1,0 +1,42 @@
+{{Rsnum
+|rsid=17047660
+|Chromosome=1
+|Orientation=plus
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|Gene=CR1
+|position=207609511
+|Gene_s=CR1
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=142
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(A;A)
+| geno2=(A;G)
+| geno3=(G;G)
+| CEU | 100.0 | 0.0 | 0.0
+| HCB | 100.0 | 0.0 | 0.0
+| JPT | 100.0 | 0.0 | 0.0
+| YRI | 59.2 | 29.9 | 10.9
+| ASW | 63.2 | 36.8 | 0.0
+| CHB | 100.0 | 0.0 | 0.0
+| CHD | 0.0 | 0.0 | 0.0
+| GIH | 0.0 | 0.0 | 0.0
+| LWK | 49.5 | 44.0 | 6.4
+| MEX | 96.6 | 3.4 | 0.0
+| MKK | 54.8 | 38.7 | 6.5
+| TSI | 0.0 | 0.0 | 0.0
+| HapMapRevision=28
+}}{{PMID Auto
+|PMID=25788827
+|Title=Extensive genomic variability of knops blood group polymorphisms is associated with sickle cell disease in Africa
+|OA=1
+}}
+
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}
+{{on chip | FTDNA2}}
+{{on chip | HumanOmni1Quad}}
+{{on chip | Illumina Human 1M}}

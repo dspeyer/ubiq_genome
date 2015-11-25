@@ -1,0 +1,74 @@
+{{Rsnum
+|rsid=1494961
+|Gene=HELQ
+|Chromosome=4
+|position=83453327
+|Orientation=plus
+|GMAF=0.3737
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(C;C)
+|geno2=(C;T)
+|geno3=(T;T)
+|Gene_s=HELQ
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(C;C)
+| geno2=(C;T)
+| geno3=(T;T)
+| CEU | 16.8 | 56.6 | 26.5
+| HCB | 12.0 | 36.1 | 51.9
+| JPT | 13.5 | 48.6 | 37.8
+| YRI | 2.0 | 25.2 | 72.8
+| ASW | 10.5 | 36.8 | 52.6
+| CHB | 12.0 | 36.1 | 51.9
+| CHD | 12.0 | 42.6 | 45.4
+| GIH | 17.5 | 48.5 | 34.0
+| LWK | 0.0 | 31.8 | 68.2
+| MEX | 13.8 | 37.9 | 48.3
+| MKK | 1.9 | 46.2 | 51.9
+| TSI | 29.0 | 52.0 | 19.0
+| HapMapRevision=28
+}}{{PMID Auto
+|PMID=21437268
+|Title=A Genome-Wide Association Study of Upper Aerodigestive Tract Cancers Conducted within the INHANCE Consortium
+|OA=1
+}}
+
+{{GET Evidence
+|gene=HELQ
+|aa_change=Val306Ile
+|aa_change_short=V306I
+|impact=not reviewed
+|qualified_impact=Insufficiently evaluated not reviewed
+|inheritance=unknown
+|quality_scores=Array
+|dbsnp_id=rs1494961
+|overall_frequency_n=6372
+|overall_frequency_d=10758
+|overall_frequency=0.592303
+|n_genomes=51
+|n_genomes_annotated=0
+|n_haplomes=75
+|n_articles=0
+|n_articles_annotated=0
+|nblosum100=-4
+|autoscore=0
+|webscore=N
+}}
+
+{{PMID Auto
+|PMID=23430454
+|Title=Genetic variants at 4q21, 4q23 and 12q24 are associated with esophageal squamous cell carcinoma risk in a Chinese population
+}}
+
+{{on chip | 23andMe v1}}
+{{on chip | 23andMe v2}}
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}
+{{on chip | Affy GenomeWide 6}}
+{{on chip | FTDNA2}}
+{{on chip | FTDNA}}
+{{on chip | HumanOmni1Quad}}
+{{on chip | Illumina Human 1M}}

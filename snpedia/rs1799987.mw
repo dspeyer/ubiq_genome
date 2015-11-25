@@ -1,0 +1,159 @@
+{{Rsnum
+|rsid=1799987
+|Gene=CCR5
+|Chromosome=3
+|position=46370444
+|Orientation=plus
+|GMAF=0.4871
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|Gene_s=CCR5,LOC102724297
+|StabilizedOrientation=plus
+}}[[CCR5]] 59029G, also known as -2459 [PMID 9742978, PMID 12815099]
+
+{{PMID Auto
+|PMID=22146622
+|Title=Polymorphisms of CCL3L1/CCR5 genes and recurrence of hepatitis B in liver transplant recipients
+}}
+
+{{PMID Auto
+|PMID=15726497
+|Title=Gene-environment interaction effects on the development of immune responses in the 1st year of life.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=17079285
+|Title=Genetic protection against hepatitis B virus conferred by CCR5Delta32: Evidence that CCR5 contributes to viral persistence.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=17672867
+|Title=Polymorphisms in chemokine receptor genes and susceptibility to Kawasaki disease.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=17984846
+|Title=Single nucleotide polymorphism of CC chemokine ligand 5 promoter gene in recipients may predict the risk of chronic graft-versus-host disease and its severity after allogeneic transplantation.
+}}
+
+{{PMID Auto
+|PMID=18182569
+|Title=Pharmacogenetics of minimal residual disease response in children with B-precursor acute lymphoblastic leukemia: a report from the Children's Oncology Group.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=18633107
+|Title=G/T substitution in intron 1 of the UNC13B gene is associated with increased risk of nephropathy in patients with type 1 diabetes.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=19131662
+|Title=A meta-analysis of candidate gene polymorphisms and ischemic stroke in 6 study populations: association of lymphotoxin-alpha in nonhypertensive patients.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=19225544
+|Title=Variation in the lymphotoxin-alpha/tumor necrosis factor locus modifies risk of erythema nodosum in sarcoidosis.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=19263529
+|Title=Genetic risk factors in recurrent venous thromboembolism: A multilocus, population-based, prospective approach.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=19330901
+|Title=Association of 77 polymorphisms in 52 candidate genes with blood pressure progression and incident hypertension: the Women's Genome Health Study.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=19559392
+|Title=A candidate gene association study of 77 polymorphisms in migraine.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20031567
+|Title=An evaluation of candidate genes of inflammation and thrombosis in relation to the risk of venous thromboembolism: The Women's Genome Health Study.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20206716
+|Title=Genetic variation within the gene encoding the HIV-1 CCR5 coreceptor in two South African populations.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20487506
+|Title=A whole genome association study of mother-to-child transmission of HIV in Malawi.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20552027
+|Title=Host and viral genetic correlates of clinical definitions of HIV-1 disease progression.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=21091093
+|Title=Polymorphisms in chemokine and receptor genes and gastric cancer risk and survival in a high risk Polish population.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=22924548
+|Title=CCR5 gene polymorphism is a genetic risk factor for radiographic severity of rheumatoid arthritis.
+}}
+
+{{ClinVar
+|ALT=G
+|CAF=0.4515; 0.5485
+|CHROM=3
+|CLNACC=RCV000008671.1; RCV000008674.1; RCV000008675.3
+|CLNALLE=1
+|CLNDBN=Acquired immunodeficiency syndrome, delayed progression to; CCR5 PROMOTER POLYMORPHISM; Human immunodeficiency virus type 1, susceptibility to
+|CLNDSDB=MedGen:OMIM
+|CLNDSDBID=C1836230:609423
+|CLNHGVS=NC_000003.12:g.46370444A>G
+|CLNORIGIN=1
+|CLNREVSTAT=no_assertion_criteria_provided
+|CLNSIG=255
+|CLNSRC=OMIM Allelic Variant
+|CLNSRCID=601373.0006; 601373.0009
+|COMMON=1
+|Disease=Acquired immunodeficiency syndrome; CCR5 PROMOTER POLYMORPHISM; Human immunodeficiency virus type 1
+|FwdALT=G
+|FwdREF=A
+|GENEINFO=LOC102724297:102724297; CCR5:1234
+|GENE_ID=102724297; 1234
+|GENE_NAME=LOC102724297; CCR5
+|REF=A
+|RSPOS=46370444
+|Reversed=0
+|SAO=0
+|SSR=0
+|Tags=PM;PMC;SLO;INT;ASP;VLD;G5A;G5;HD;GNO;KGPhase1;KGPhase3
+|VC=SNV
+|VP=0x050128080005170536000100
+|WGT=1
+|dbSNPBuildID=89
+|rsid=1799987
+}}
+{{on chip | 23andMe v2}}
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}

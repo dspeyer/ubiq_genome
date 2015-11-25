@@ -1,0 +1,42 @@
+{{Rsnum
+|rsid=6598266
+|Chromosome=15
+|position=99759034
+|Orientation=plus
+|GMAF=0.1671
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(A;A)
+| geno2=(A;G)
+| geno3=(G;G)
+| CEU | 1.8 | 20.5 | 77.7
+| HCB | 1.5 | 11.8 | 86.8
+| JPT | 0.0 | 8.8 | 91.2
+| YRI | 14.4 | 52.7 | 32.9
+| ASW | 18.5 | 40.7 | 40.7
+| CHB | 1.5 | 11.8 | 86.8
+| CHD | 0.9 | 11.0 | 88.1
+| GIH | 7.0 | 22.0 | 71.0
+| LWK | 7.3 | 47.3 | 45.5
+| MEX | 0.0 | 17.2 | 82.8
+| MKK | 3.9 | 37.0 | 59.1
+| TSI | 1.0 | 19.0 | 80.0
+| HapMapRevision=28
+}}{{PMID Auto GWAS
+  |PMID=23377640
+  |Trait=Major depressive disorder
+  |Title=Common genetic variation and antidepressant efficacy in major depressive disorder: a meta-analysis of three genome-wide pharmacogenetic studies.
+  |RiskAllele=A
+  |Pval=3E-6
+  |OR=.25
+  |ORtxt=[0.15-0.36] unit increase
+  }}
+
+{{on chip | Affy GenomeWide 6}}
+{{on chip | FTDNA}}

@@ -1,0 +1,89 @@
+{{Rsnum
+|rsid=1799988
+|Gene=CCR5
+|Chromosome=3
+|position=46370768
+|Orientation=plus
+|GMAF=0.4881
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(C;C)
+|geno2=(C;T)
+|geno3=(T;T)
+|Gene_s=CCR5,LOC102724297
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(C;C)
+| geno2=(C;T)
+| geno3=(T;T)
+| CEU | 30.1 | 43.4 | 26.5
+| HCB | 10.9 | 58.4 | 30.7
+| JPT | 26.5 | 54.0 | 19.5
+| YRI | 0.0 | 0.0 | 0.0
+| ASW | 0.0 | 0.0 | 0.0
+| CHB | 10.9 | 58.4 | 30.7
+| CHD | 20.2 | 39.4 | 40.4
+| GIH | 12.9 | 50.5 | 36.6
+| LWK | 40.7 | 30.6 | 28.7
+| MEX | 37.9 | 39.7 | 22.4
+| MKK | 34.6 | 41.8 | 23.5
+| TSI | 18.6 | 59.8 | 21.6
+| HapMapRevision=28
+}}{{PMID Auto
+|PMID=20153665
+|Title=Genetic variation at the CCR5/CCR2 gene cluster and risk of psoriasis and psoriatic arthritis
+}}
+
+{{PMID Auto
+|PMID=16672419
+|Title=Polymorphisms in the genes encoding chemokine receptor 5, interleukin-10, and monocyte chemoattractant protein 1 contribute to cytomegalovirus reactivation and disease after allogeneic stem cell transplantation.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20041166
+|Title=Common genetic variation and the control of HIV-1 in humans.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20206716
+|Title=Genetic variation within the gene encoding the HIV-1 CCR5 coreceptor in two South African populations.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20487506
+|Title=A whole genome association study of mother-to-child transmission of HIV in Malawi.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=20552027
+|Title=Host and viral genetic correlates of clinical definitions of HIV-1 disease progression.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=23168091
+|Title=Chemokine Ligand 5 (CCL5) and Chemokine Receptor (CCR5) Genetic Variants and Prostate Cancer Risk among men of African Descent:  A Case-Control Study
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=23150742
+|Title=Myocardial chemokine expression and intensity of myocarditis in Chagas cardiomyopathy are controlled by polymorphisms in CXCL9 and CXCL10
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=24463784
+|Title=Variants in host viral replication cycle genes are associated with heterosexual HIV-1 acquisition in Africans
+|OA=1
+}}
+
+{{on chip | FTDNA2}}
+{{on chip | FTDNA}}
+{{on chip | HumanOmni1Quad}}
+{{on chip | Illumina Human 1M}}

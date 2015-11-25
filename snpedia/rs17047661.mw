@@ -1,0 +1,22 @@
+{{Rsnum
+|rsid=17047661
+|Chromosome=1
+|Orientation=plus
+|Gene=CR1
+|position=207609544
+|Gene_s=CR1
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=142
+|StabilizedOrientation=plus
+}}{{PMID Auto
+|PMID=25788827
+|Title=Extensive genomic variability of knops blood group polymorphisms is associated with sickle cell disease in Africa
+|OA=1
+}}
+
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}
+{{on chip | FTDNA2}}
+{{on chip | HumanOmni1Quad}}
+{{on chip | Illumina Human 1M}}

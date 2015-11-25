@@ -1,0 +1,40 @@
+{{Rsnum
+|rsid=6138953
+|Gene=PTPRA
+|Chromosome=20
+|position=2930234
+|Orientation=plus
+|GMAF=0.06749
+|Gene_s=PTPRA
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(G;G)
+|geno2=(G;T)
+|geno3=(T;T)
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(G;G)
+| geno2=(G;T)
+| geno3=(T;T)
+| CEU | 0.0 | 0.9 | 99.1
+| HCB | 2.9 | 17.5 | 79.6
+| JPT | 0.0 | 11.5 | 88.5
+| YRI | 0.7 | 15.1 | 84.2
+| ASW | 0.0 | 15.8 | 84.2
+| CHB | 2.9 | 17.5 | 79.6
+| CHD | 0.0 | 12.8 | 87.2
+| GIH | 0.0 | 4.0 | 96.0
+| LWK | 0.9 | 19.1 | 80.0
+| MEX | 1.7 | 31.0 | 67.2
+| MKK | 0.6 | 21.2 | 78.2
+| TSI | 0.0 | 0.0 | 0.0
+| HapMapRevision=28
+}}{{PMID Auto
+|PMID=23487342
+|Title=Combined genome-wide linkage and association analyses of fasting glucose level in healthy twins and families of Korea
+|OA=1
+}}
+
+{{on chip | Affy GenomeWide 6}}
+{{on chip | Illumina Human 1M}}

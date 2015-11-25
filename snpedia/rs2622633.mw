@@ -1,0 +1,49 @@
+{{Rsnum
+|rsid=2622633
+|Gene=ZFPM2
+|Chromosome=8
+|position=105497747
+|Orientation=plus
+|GMAF=0.1928
+|Gene_s=ZFPM2
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(A;A)
+| geno2=(A;G)
+| geno3=(G;G)
+| CEU | 9.2 | 38.5 | 52.3
+| HCB | 0.0 | 11.1 | 88.9
+| JPT | 0.0 | 18.2 | 81.8
+| YRI | 7.9 | 30.2 | 61.9
+| ASW | 0.0 | 0.0 | 0.0
+| CHB | 0.0 | 11.1 | 88.9
+| CHD | 0.0 | 0.0 | 0.0
+| GIH | 0.0 | 0.0 | 0.0
+| LWK | 0.0 | 0.0 | 0.0
+| MEX | 0.0 | 0.0 | 0.0
+| MKK | 0.0 | 0.0 | 0.0
+| TSI | 0.0 | 0.0 | 0.0
+| HapMapRevision=28
+}}{{PMID Auto GWAS
+  |PMID=23870195
+  |Trait=Coronary artery calcification
+  |Title=Genetics of coronary artery calcification among African Americans, a meta-analysis.
+  |RiskAllele=A
+  |Pval=6E-6
+  |OR=.20
+  |ORtxt=[0.1-0.3] unit increase
+  |OA=1
+}}
+
+{{on chip | 23andMe v1}}
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}
+{{on chip | FTDNA2}}
+{{on chip | FTDNA}}
+{{on chip | HumanOmni1Quad}}

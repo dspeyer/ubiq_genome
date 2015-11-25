@@ -1,0 +1,45 @@
+{{Rsnum
+|rsid=41469351
+|Chromosome=3
+|Orientation=plus
+|geno1=(C;C)
+|geno2=(C;T)
+|geno3=(T;T)
+|Gene=CCR5
+|position=46370771
+|Gene_s=CCR5,LOC102724297
+|Assembly=GRCh38.p2
+|GenomeBuild=38.2
+|dbSNPBuild=144
+}}{{ClinVar
+|ALT=T
+|CAF=0.9289; 0.07109
+|CHROM=3
+|CLNACC=RCV000008672.1
+|CLNALLE=1
+|CLNDBN=Human immunodeficiency virus type 1, increased perinatal transmission of
+|CLNHGVS=NC_000003.12:g.46370771C>T
+|CLNORIGIN=1
+|CLNREVSTAT=no_assertion_criteria_provided
+|CLNSIG=5
+|CLNSRC=OMIM Allelic Variant
+|CLNSRCID=601373.0007
+|COMMON=1
+|Disease=Human immunodeficiency virus type 1
+|FwdALT=T
+|FwdREF=C
+|GENEINFO=LOC102724297:102724297; CCR5:1234
+|GENE_ID=102724297; 1234
+|GENE_NAME=LOC102724297; CCR5
+|REF=C
+|RSPOS=46370771
+|Reversed=0
+|SAO=0
+|SSR=0
+|Tags=PM;PMC;SLO;U5;INT;ASP;VLD;HD;GNO;KGPhase1;KGPhase3
+|VC=SNV
+|VP=0x050128480005140536000100
+|WGT=1
+|dbSNPBuildID=127
+|rsid=41469351
+}}

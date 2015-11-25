@@ -1,0 +1,30 @@
+{{Rsnum
+|rsid=2856758
+|Gene=CCR5
+|Chromosome=3
+|position=46370170
+|Orientation=plus
+|GMAF=0.07759
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|Gene_s=CCR5,LOC102724297
+|StabilizedOrientation=plus
+}}Rs2856758 is a SNP in the [[CCR5]] gene (CC-chemokine receptor type 5). Variants in [[CCR5]] are associated with resistance to [[HIV]] infection. [http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0011079] 
+
+Another mutation in this gene, [[rs333]] (also known as the CCR5-delta32 deletion), is associated with resistance to HIV. This mutation may have spread in the European population in response to selection pressure from plague (Black Death) or smallpox. [http://www.pnas.org/content/100/25/15276.long]
+
+{{PMID|16055130}} Polymorphisms in the CC-chemokine receptor-2 (CCR2) and -5 (CCR5) genes and risk of coronary heart disease among US women.
+
+{{PMID|20206716|OA=1
+}} Genetic variation within the gene encoding the HIV-1 CCR5 coreceptor in two South African populations.
+
+{{PMID|20552027|OA=1
+}} Host and viral genetic correlates of clinical definitions of HIV-1 disease progression.
+
+{{on chip | 23andMe v2}}
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}

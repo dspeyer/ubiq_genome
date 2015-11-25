@@ -1,0 +1,63 @@
+{{Rsnum
+|rsid=6691117
+|Gene=CR1
+|Chromosome=1
+|position=207609586
+|Orientation=plus
+|GMAF=0.3893
+|Gene_s=CR1
+|Assembly=GRCh38
+|GenomeBuild=38.1
+|dbSNPBuild=141
+|geno1=(A;A)
+|geno2=(A;G)
+|geno3=(G;G)
+|StabilizedOrientation=plus
+}}{{ population diversity
+| geno1=(A;A)
+| geno2=(A;G)
+| geno3=(G;G)
+| CEU | 68.8 | 26.8 | 4.5
+| HCB | 65.0 | 29.9 | 5.1
+| JPT | 62.2 | 34.2 | 3.6
+| YRI | 2.1 | 15.1 | 82.9
+| ASW | 5.3 | 42.1 | 52.6
+| CHB | 65.0 | 29.9 | 5.1
+| CHD | 51.9 | 40.7 | 7.4
+| GIH | 30.7 | 38.6 | 30.7
+| LWK | 2.8 | 27.5 | 69.7
+| MEX | 48.3 | 43.1 | 8.6
+| MKK | 14.1 | 48.7 | 37.2
+| TSI | 63.0 | 32.0 | 5.0
+| HapMapRevision=28
+}}{{PMID Auto
+|PMID=23591632
+|Title=Maternal coding variants in complement receptor 1 and spontaneous idiopathic preterm birth
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=24018213
+|Title=Missense variants in CR1 are associated with increased risk of Alzheimer' disease in Han Chinese
+}}
+
+{{PMID Auto
+|PMID=21700265
+|Title=Complement receptor 1 gene variants are associated with erythrocyte sedimentation rate.
+|OA=1
+}}
+
+{{PMID Auto
+|PMID=23856853
+|Title=Association of a complement receptor 1 gene variant with baseline erythrocyte sedimentation rate levels in patients starting anti-TNF therapy in a UK rheumatoid arthritis cohort: results from the Biologics in Rheumatoid Arthritis Genetics and Genomics Study Syndicate cohort.
+|OA=1
+}}
+
+{{on chip | 23andMe v1}}
+{{on chip | 23andMe v2}}
+{{on chip | 23andMe v3}}
+{{on chip | 23andMe v4}}
+{{on chip | FTDNA2}}
+{{on chip | FTDNA}}
+{{on chip | HumanOmni1Quad}}
+{{on chip | Illumina Human 1M}}
