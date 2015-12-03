@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
 from scipy.stats import binom
+from collections import defaultdict
+from updateonsnp import update
 
 ourvals={}
 ourps={}
@@ -14,6 +16,10 @@ hetrare=[0]*ngenomes
 hommatch=[0]*ngenomes
 hommis=[0]*ngenomes
 
+notes=[]
+for i in range(ngenomes):
+    notes.append(defaultdict(lambda:0))
+
 for line in file('snplist'):
     words=line.split('\t')
     if words[0]=='chr6' and words[4]!='0':
@@ -25,36 +31,25 @@ for line in file('/windows/ALL.chr6.ours.vcf'):
     snp = words[2]
     if snp not in ourvals:
         continue
-    if ourvals[snp]==words[3]:
-        ourval='0'
-    elif ourvals[snp]==words[4]:
-        ourval='1'
-    else:
-        continue
+    meaning=words[3:5]
+    if len(meaning[1])>1:
+        meaning=[meaning[0]]+meaning[1].split(',')
     for i in range(ngenomes):
         ref=words[i+9]
-        if ref[0]==ref[2]: # homozygous case
-#            continue
-            if ourval==ref[0]: # match
-                p_obs_given_match = 1
-                hommatch[i] += 1
-            else:
-                p_obs_given_match = .05 # wild guess
-                hommis[i] += 1
-            p_obs_given_mismatch = ourps[snp]
-        else: # heterozygous
-            p_obs_given_match = 0.5
-            p_obs_given_mismatch = ourps[snp]
-            if ourps[snp]>.5:
-                hetcom[i] += 1
-            else:
-                hetrare[i] += 1
-        p_obs = ps[i]*p_obs_given_match + (1-ps[i])*p_obs_given_mismatch
-        ps[i] *= p_obs_given_match / p_obs
+        try:
+            ref=meaning[int(ref[0])]+meaning[int(ref[2])]
+        except IndexError as e:
+            print ref
+            print meaning
+            throw(e)
+        ps[i]=update(ourvals[snp], ref, ps[i], ourps[snp], notes[i])
 
 results = zip(ps, range(ngenomes))
 results.sort(key=lambda(x):x[0],reverse=True)
 for i in results:
-    print 'Patient %d has p=%f homhit=%d hommiss=%d het common=%d rare=%d p=%f' % (i[1],i[0],hommatch[i[1]],hommis[i[1]],hetcom[i[1]], hetrare[i[1]], binom.cdf(min(hetcom[i[1]], hetrare[i[1]]), hetcom[i[1]]+hetrare[i[1]], 0.5))
+    p=i[1]
+    hetcom=notes[p]['hetcom']
+    hetrare=notes[p]['hetrare']
+    print 'Patient %d has p=%f homhit=%d hommiss=%d het common=%d rare=%d p=%f' % (p,i[0],notes[p]['homohit'],notes[p]['homomiss'], hetcom, hetrare, binom.cdf(min(hetcom, hetrare), hetcom+hetrare, 0.5))
     if i[0]<.1:
         break
